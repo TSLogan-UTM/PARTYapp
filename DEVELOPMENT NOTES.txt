@@ -1,0 +1,21 @@
+DEVELOPMENT NOTES:
+
+I figured this would be a good file to add to help us communicate with eachother so I'm 
+adding it to the project today. Should have thought of it sooner.
+
+11/14/19-------
+
+TSL:
+- Got all the GUI elements added to the project and formatted correctly for the screen on my PC.
+  Please double check me to make sure it is behaving correctly on your screen too.  
+- Added code so the program now opens maximized by default.
+- IMPORTANT! I have added all the GUI elements to the program's Resource Dictionary inside the
+  App.xaml file so they should be accessible from anywhere in the program by using
+  'Source="{StaticResource Red}"' when referencing the images. Please don't change any code in
+  the App.xaml file in the <ResourceDistionary> section that looks similiar to:
+  "<BitmapImage x:Key="TopBar" UriSource="assets\TopBar.jpg"></BitmapImage>".
+- Text fields were created as Text fields, Create Button was created as a button, neither have
+  any action scripting done yet.
+- Color pallet options were created as individual images so hopefully we can script actions 
+  for those too.
+- THANKS!
