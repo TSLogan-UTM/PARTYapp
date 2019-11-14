@@ -4,6 +4,27 @@
              xmlns:local="clr-namespace:PARTYapp"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <BitmapImage x:Key="TopBar" UriSource="assets\TopBar.jpg"></BitmapImage>
+            <BitmapImage x:Key="MenuBar" UriSource="assets\MenuBar.jpg"></BitmapImage>
+            <BitmapImage x:Key="BottomBar" UriSource="assets\BottomBar.jpg"></BitmapImage>
+            <BitmapImage x:Key="Background" UriSource="assets\Background.jpg"></BitmapImage>
+            <BitmapImage x:Key="CreateButton" UriSource="assets\CreateButton.jpg"></BitmapImage>
+            <BitmapImage x:Key="Black" UriSource="assets\BlackBox.jpg"></BitmapImage>
+            <BitmapImage x:Key="Blue" UriSource="assets\BlueBox.jpg"></BitmapImage>
+            <BitmapImage x:Key="Brown" UriSource="assets\BrownBox.jpg"></BitmapImage>
+            <BitmapImage x:Key="DarkGray" UriSource="assets\DarkGrayBox.jpg"></BitmapImage>
+            <BitmapImage x:Key="DarkPink" UriSource="assets\DarkPinkBox.jpg"></BitmapImage>
+            <BitmapImage x:Key="LightBlue" UriSource="assets\LightBlueBox.jpg"></BitmapImage>
+            <BitmapImage x:Key="LightGray" UriSource="assets\LightGrayBox.jpg"></BitmapImage>
+            <BitmapImage x:Key="LightPink" UriSource="assets\LightPinkBox.jpg"></BitmapImage>
+            <BitmapImage x:Key="LimeGreen" UriSource="assets\LimeGreenBox.jpg"></BitmapImage>
+            <BitmapImage x:Key="NeonGreen" UriSource="assets\NeonGreenBox.jpg"></BitmapImage>
+            <BitmapImage x:Key="Orange" UriSource="assets\OrangeBox.jpg"></BitmapImage>
+            <BitmapImage x:Key="Purple" UriSource="assets\PurpleBox.jpg"></BitmapImage>
+            <BitmapImage x:Key="Red" UriSource="assets\RedBox.jpg"></BitmapImage>
+            <BitmapImage x:Key="White" UriSource="assets\WhiteBox.jpg"></BitmapImage>
+            <BitmapImage x:Key="Yellow" UriSource="assets\YellowBox.jpg"></BitmapImage>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

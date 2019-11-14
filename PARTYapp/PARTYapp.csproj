@@ -94,5 +94,27 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\Background.jpg" />
+    <Resource Include="assets\BlackBox.jpg" />
+    <Resource Include="assets\BlueBox.jpg" />
+    <Resource Include="assets\BottomBar.jpg" />
+    <Resource Include="assets\BrownBox.jpg" />
+    <Resource Include="assets\CreateButton.jpg" />
+    <Resource Include="assets\DarkGrayBox.jpg" />
+    <Resource Include="assets\DarkPinkBox.jpg" />
+    <Resource Include="assets\LightBlueBox.jpg" />
+    <Resource Include="assets\LightGrayBox.jpg" />
+    <Resource Include="assets\LightPinkBox.jpg" />
+    <Resource Include="assets\LimeGreenBox.jpg" />
+    <Resource Include="assets\MenuBar.jpg" />
+    <Resource Include="assets\NeonGreenBox.jpg" />
+    <Resource Include="assets\OrangeBox.jpg" />
+    <Resource Include="assets\PurpleBox.jpg" />
+    <Resource Include="assets\RedBox.jpg" />
+    <Resource Include="assets\TopBar.jpg" />
+    <Resource Include="assets\WhiteBox.jpg" />
+    <Resource Include="assets\YellowBox.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

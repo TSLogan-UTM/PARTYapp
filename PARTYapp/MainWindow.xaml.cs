@@ -22,6 +22,7 @@ namespace PARTYapp
     {
         public MainWindow()
         {
+            
             InitializeComponent();
         }
     }
