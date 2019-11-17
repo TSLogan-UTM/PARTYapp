@@ -28,3 +28,7 @@ PARTY_WINDOW lookin better once i have the canvas working properly. I Have done 
 I had to but I am really warming up to it. That being said if you have any questions about any of the XAML i have added
 let me know through a direct message and i will see if i can be any help. I will continue development of the PARTY_WINDOW
 right now and Try to inform either of you about any issues or new ideas.
+
+--Second Note of 11/16/2019
+Further implemented the canvas part of the program the base canvas is functional but the colour tools are very simple we should
+come up with an idea to make it really neat. (I have been on my laptop for 12 hours and i think i forgot english when i sent my last commit)
