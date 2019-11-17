@@ -19,3 +19,12 @@ TSL:
 - Color pallet options were created as individual images so hopefully we can script actions 
   for those too.
 - THANKS!
+
+Vincent: 11/16/2019
+I have cut up the images TJ has provided and made some changes that will probably be temporary.
+However, the changes have made the implementation process easier since there are not as many objects on screen.
+I have been using the .jpeg files that TJ has provided they have been a big help and i plan on using more to get the 
+PARTY_WINDOW lookin better once i have the canvas working properly. I Have done alot more in the XAML code than i wish 
+I had to but I am really warming up to it. That being said if you have any questions about any of the XAML i have added
+let me know through a direct message and i will see if i can be any help. I will continue development of the PARTY_WINDOW
+right now and Try to inform either of you about any issues or new ideas.
