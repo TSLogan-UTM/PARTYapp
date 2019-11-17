@@ -13,7 +13,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Brushes = System.Windows.Media.Brushes;
-using Point = System.Windows.Point;
 
 
 namespace PARTYapp
@@ -24,63 +23,73 @@ namespace PARTYapp
     /// </summary>
     public partial class PARTY_WINDOW : Window
     {
+        public int Colour = 0;
         public PARTY_WINDOW()
         {
 
-            
-
             InitializeComponent();
-
-            GRID_100.ShowGridLines = false;
-            GRID_75.ShowGridLines = false;
-            //GRID_50.ShowGridLines = false;
-            GRID_25.ShowGridLines = false;
-            int count = 1;
-
-
-            int width = 50;
-            int height = 50;
-
-            for (int i = 0; i < width - 1; i++)
-            {
-                for (int j = 0; j < height - 1; j++)
-                {
-                    Button MyControl1 = new Button();
-                    MyControl1.Content = "";
-                    MyControl1.Name = "Button" + count.ToString();
-                    MyControl1.Background = Brushes.White;
-                    if(count%2 > 0)
-                    {
-                        MyControl1.Background = Brushes.Gray;
-                    }
-
-                    Grid.SetColumn(MyControl1, j);
-                    Grid.SetRow(MyControl1, i);
-                    GRID_50.Children.Add(MyControl1);
-
-                    count++;
-                }
-
-            }
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public void Button_Click(object sender, EventArgs e)
         {
-            
+            Button btn = sender as Button;
+            if(Colour == 0)
+            {
+                btn.Background = Brushes.Black;
+            }
+            if(Colour == 1)
+            {
+                btn.Background = Brushes.Red;
+            }
+            if(Colour == 2)
+            {
+                btn.Background = Brushes.LimeGreen;
+            }
+            if(Colour == 3)
+            {
+                btn.Background = Brushes.Blue;
+            }
+            if(Colour == 4)
+            {
+                btn.Background = Brushes.White;
+            }
+            if(Colour == 5)
+            {
+                btn.Background = Brushes.Cyan;
+            }
+            if(Colour == 6)
+            {
+                btn.Background = Brushes.Purple;
+            }
+            if(Colour == 7)
+            {
+                btn.Background = Brushes.Yellow;
+            }
+            if(Colour == 8)
+            {
+                btn.Background = Brushes.SaddleBrown;
+            }
+            if(Colour == 9)
+            {
+                btn.Background = Brushes.Gray;
+            }
         }
 
         private void WB_TextChanged(object sender, TextChangedEventArgs e)
         {
+            
             WB.IsReadOnly = true;
         }
 
         private void HB_TextChanged(object sender, TextChangedEventArgs e)
         {
+            
             HB.IsReadOnly = true;
 
             
         }
+
 
         private void CtrlAltYeet_Click(object sender, RoutedEventArgs e)
         {
@@ -98,6 +107,54 @@ namespace PARTYapp
             
         }
 
+        private void BLACK_BUTTON_Click(object sender, RoutedEventArgs e)
+        {
+            Colour = 0;
+        }
 
+        private void RED_BUTTON_Click(object sender, RoutedEventArgs e)
+        {
+            Colour = 1;
+        }
+
+        private void GREEN_BUTTON_Click(object sender, RoutedEventArgs e)
+        {
+            Colour = 2;
+        }
+
+        private void BLUE_BUTTON_Click(object sender, RoutedEventArgs e)
+        {
+            Colour = 3;
+        }
+
+        private void WHITE_BUTTON_Click(object sender, RoutedEventArgs e)
+        {
+            Colour = 4;
+        }
+
+        private void CYAN_BUTTON_Click(object sender, RoutedEventArgs e)
+        {
+            Colour = 5;
+        }
+
+        private void PURPLE_BUTTON_Click(object sender, RoutedEventArgs e)
+        {
+            Colour = 6;
+        }
+
+        private void YELLOW_BUTTON_Click(object sender, RoutedEventArgs e)
+        {
+            Colour = 7;
+        }
+
+        private void BROWN_BUTTON_Click(object sender, RoutedEventArgs e)
+        {
+            Colour = 8;
+        }
+
+        private void GRAY_BUTTONS_Click(object sender, RoutedEventArgs e)
+        {
+            Colour = 9;
+        }
     }
 }

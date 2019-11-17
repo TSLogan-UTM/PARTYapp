@@ -126,5 +126,8 @@
   <ItemGroup>
     <Resource Include="assets\MenuBar.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\Default_BackGround.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

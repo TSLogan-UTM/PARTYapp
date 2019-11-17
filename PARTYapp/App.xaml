@@ -25,6 +25,7 @@
             <BitmapImage x:Key="Red" UriSource="assets\RedBox.jpg"></BitmapImage>
             <BitmapImage x:Key="White" UriSource="assets\WhiteBox.jpg"></BitmapImage>
             <BitmapImage x:Key="Yellow" UriSource="assets\YellowBox.jpg"></BitmapImage>
+            <BitmapImage x:Key="Default_BackGround" UriSource="assets\Default_BackGround.jpg"></BitmapImage>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

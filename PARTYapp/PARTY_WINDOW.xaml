@@ -6,16 +6,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PARTYapp"
         mc:Ignorable="d"
-        Title="PARTY_WINDOW" ResizeMode="NoResize" Height="572" Width="729">
+        Title="PARTY_WINDOW" ResizeMode="NoResize" Height="600.75" Width="762.984">
     <Grid Margin="0,0,42,0">
-        <Image HorizontalAlignment="Left" Height="40" Source="{StaticResource TopBar}" VerticalAlignment="Top" Width="805" Margin="0,0,-126,0"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="215*"/>
+            <ColumnDefinition Width="479*"/>
+        </Grid.ColumnDefinitions>
+        <Image HorizontalAlignment="Left" Height="40" Source="{StaticResource TopBar}" VerticalAlignment="Top" Width="800" Margin="0,0,-106,0" Grid.ColumnSpan="2"/>
 
-        <TextBox x:Name="WB"  x:FieldModifier="public" HorizontalAlignment="Left" Height="23" Margin="90,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="WB_TextChanged"/>
-        <TextBox x:Name="HB"  x:FieldModifier="public" HorizontalAlignment="Left" Height="23" Margin="90,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="HB_TextChanged"/>
-        <Rectangle x:Name="Divider" Fill="#FF3A4AFF" HorizontalAlignment="Left" Height="503" Margin="215,40,0,0" Stroke="#FF3A4AFF" VerticalAlignment="Top" Width="5"/>
-        <Button x:Name="CtrlAltYeet" Content="Shutdown" HorizontalAlignment="Left" Margin="55,150,0,0" VerticalAlignment="Top" Width="75" Background="Red" FontWeight="Bold" FontFamily="Times New Roman" Click="CtrlAltYeet_Click"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="10,50,0,0" VerticalAlignment="Top" Width="100"/>
-        <Grid x:Name="GRID_100" Height="503" Margin="220,40,-42,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="503">
+
+        <TextBox x:Name="WB"  x:FieldModifier="public" HorizontalAlignment="Left" Height="20" Margin="100,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="35" TextChanged="WB_TextChanged"/>
+        <TextBox x:Name="HB"  x:FieldModifier="public" HorizontalAlignment="Left" Height="20" Margin="100,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="35" TextChanged="HB_TextChanged"/>
+        <Rectangle Fill="#FF08CD34" HorizontalAlignment="Left" Height="36" Margin="0,519,0,0" Stroke="Red" VerticalAlignment="Top" Width="216" Grid.ColumnSpan="2"/>
+        <Grid x:Name="GRID_100" Height="515" Margin="5,40,-21,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="503" Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
@@ -220,11 +223,10 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            
+
         </Grid>
-        <Grid x:Name="GRID_75" Grid.ColumnSpan="100"  Margin="220,40,-42,0" HorizontalAlignment="Left" Grid.RowSpan="100" Width="503">
+        <Grid x:Name="GRID_75"  Margin="5,40,-21,17" HorizontalAlignment="Left" Width="503" Grid.Column="1">
             <Grid.RowDefinitions>
-                <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
@@ -377,11 +379,10 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
-                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
         </Grid>
-        <Grid x:Name="GRID_50" HorizontalAlignment="Left"  Margin="220,40,-42,0" Height="503" VerticalAlignment="Top" Width="503">
+        <Grid x:Name="GRID_50" HorizontalAlignment="Left"  Margin="5,40,-21,0" Height="515" VerticalAlignment="Top" Width="503" Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
@@ -488,9 +489,116 @@
             </Grid.ColumnDefinitions>
 
         </Grid>
-        <Grid x:Name="GRID_25" HorizontalAlignment="Left"  Margin="220,40,-42,0" Height="503" VerticalAlignment="Top" Width="503">
+        <Grid x:Name="GRID_25" HorizontalAlignment="Left"  Margin="5,40,-21,0" Height="515" VerticalAlignment="Top" Width="503" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
 
         </Grid>
+        <Rectangle Fill="#FF3A4AFF" HorizontalAlignment="Left" Height="5" Margin="0,515,0,0" Stroke="#FF3A4AFF" VerticalAlignment="Top" Width="215"/>
+        <Ellipse Fill="Transparent" HorizontalAlignment="Left" Height="25" Margin="15,525,0,0" Stroke="Red" VerticalAlignment="Top" Width="25"/>
+        <Ellipse Fill="Transparent" HorizontalAlignment="Left" Height="25" Margin="175,525,0,0" Stroke="Red" VerticalAlignment="Top" Width="25"/>
+        <Rectangle Fill="Transparent" HorizontalAlignment="Left" Height="25" Margin="27,525,0,0" Stroke="Red" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="47.337"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Grid Grid.ColumnSpan="2" Margin="0,0,0,-2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="215*"/>
+                <ColumnDefinition Width="479*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Image HorizontalAlignment="Left" Height="40" Source="{StaticResource TopBar}" VerticalAlignment="Top" Width="800" Margin="0,0,-106,0" Grid.ColumnSpan="2"/>
+            <Button x:Name="CtrlAltYeet1" Content="Shutdown" HorizontalAlignment="Left" Margin="70,526,0,0" VerticalAlignment="Top" Width="75" Background="Red" FontWeight="Bold" FontFamily="Times New Roman" Click="CtrlAltYeet_Click" Height="25"/>
+            <Rectangle Fill="#FF3A4AFF" HorizontalAlignment="Left" Height="5" Margin="0,515,0,0" Stroke="#FF3A4AFF" VerticalAlignment="Top" Width="215"/>
+            <Ellipse Fill="Transparent" HorizontalAlignment="Left" Height="25" Margin="15,525,0,0" Stroke="Red" VerticalAlignment="Top" Width="25"/>
+            <Ellipse Fill="Transparent" HorizontalAlignment="Left" Height="25" Margin="175,525,0,0" Stroke="Red" VerticalAlignment="Top" Width="25"/>
+            <Rectangle Fill="Transparent" HorizontalAlignment="Left" Height="24" Margin="187,526,0,0" Stroke="Red" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="47.337"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Label Content=" Height:&#xA;&#xA;  Width:" HorizontalAlignment="Left" Margin="45,80,0,0" VerticalAlignment="Top" Width="55" Height="65" FontSize="13"/>
+            <Rectangle Fill="#FF3A4AFF" HorizontalAlignment="Left" Height="17" Margin="0,555,-40,0" Stroke="#FF3A4AFF" VerticalAlignment="Top" Width="755" Grid.ColumnSpan="2"/>
+            <Button x:Name="RED_BUTTON" Content="RED" HorizontalAlignment="Left" Margin="10,360,0,0" VerticalAlignment="Top" Width="70" Height="40" Background="Red" FontFamily="Segoe UI Semibold" FontSize="17" Click="RED_BUTTON_Click"/>
+            <Button x:Name="GREEN_BUTTON" Content="GREEN" HorizontalAlignment="Left" Margin="10,415,0,0" VerticalAlignment="Top" Width="70" Height="40" FontFamily="Segoe UI Semibold" FontSize="17" Background="Lime" Click="GREEN_BUTTON_Click"/>
+            <Button x:Name="BLUE_BUTTON" Content="BLUE" HorizontalAlignment="Left" Margin="10,470,0,0" VerticalAlignment="Top" Width="70" Height="40" FontFamily="Segoe UI Semibold" FontSize="17" Background="Blue" Click="BLUE_BUTTON_Click"/>
+            <Button x:Name="BLACK_BUTTON" Content="BLACK" HorizontalAlignment="Left" Margin="10,305,0,0" VerticalAlignment="Top" Width="70" Height="40" Background="Black" Foreground="White" FontFamily="Segoe UI Semibold" FontSize="17" Click="BLACK_BUTTON_Click"/>
+            <Button x:Name="WHITE_BUTTON" Content="WHITE" HorizontalAlignment="Left" Margin="10,250,0,0" VerticalAlignment="Top" Width="70" Height="40" Background="White" BorderBrush="Black" FontFamily="Segoe UI Semibold" FontSize="17" Click="WHITE_BUTTON_Click"/>
+            <Button x:Name="CYAN_BUTTON" Content="CYAN" HorizontalAlignment="Left" Margin="135,470,0,0" VerticalAlignment="Top" Width="70" Height="40" BorderBrush="#FFB4B4B4" Background="Cyan" FontFamily="Segoe UI Semibold" FontSize="17" Click="CYAN_BUTTON_Click"/>
+            <Button x:Name="PURPLE_BUTTON" Content="PURPLE" HorizontalAlignment="Left" Margin="135,415,0,0" VerticalAlignment="Top" Width="70" Height="40" FontFamily="Segoe UI Semibold" FontSize="17" Background="#FFB400B4" Click="PURPLE_BUTTON_Click"/>
+            <Button x:Name="YELLOW_BUTTON" Content="YELLOW" HorizontalAlignment="Left" Margin="135,360,0,0" VerticalAlignment="Top" Width="70" Height="40" Background="#FFFFFF10" FontFamily="Segoe UI Semibold" FontSize="17" Click="YELLOW_BUTTON_Click"/>
+            <Button x:Name="BROWN_BUTTON" Content="BROWN" HorizontalAlignment="Left" Margin="135,305,0,0" VerticalAlignment="Top" Width="70" Height="40" Background="#FFAE5126" FontFamily="Segoe UI Semibold" FontSize="17" Click="BROWN_BUTTON_Click"/>
+            <Button x:Name="GRAY_BUTTONS" Content="GRAY" HorizontalAlignment="Left" Margin="135,250,0,0" VerticalAlignment="Top" Width="70" Height="40" BorderBrush="#FF555555" Background="#FFB8B8B8" FontFamily="Segoe UI Semibold" FontSize="17" Click="GRAY_BUTTONS_Click"/>
+
+
+        </Grid>
+        <Rectangle Grid.Column="1" Fill="#FF3A4AFF" HorizontalAlignment="Left" Height="572" Margin="508,0,-42,0" Stroke="#FF3A4AFF" VerticalAlignment="Top" Width="27"/>
+        <Rectangle Fill="#FF3A4AFF" HorizontalAlignment="Left" Height="547" Margin="0,25,0,0" Stroke="#FF3A4AFF" VerticalAlignment="Top" Width="5"/>
+        <Rectangle x:Name="Divider" Fill="#FF3A4AFF" HorizontalAlignment="Left" Height="517" Margin="210,40,0,0" Stroke="#FF3A4AFF" VerticalAlignment="Top" Width="13" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>
