@@ -32,3 +32,8 @@ right now and Try to inform either of you about any issues or new ideas.
 --Second Note of 11/16/2019
 Further implemented the canvas part of the program the base canvas is functional but the colour tools are very simple we should
 come up with an idea to make it really neat. (I have been on my laptop for 12 hours and i think i forgot english when i sent my last commit)
+
+Vincent Manoli:
+I have updated some aspects of the GUI and added new functionality. There is a blank area between the clear button and the colour area
+that will hold future tools. The save button is in the area just mentioned it does nothing at the moment along with a global 
+variable called "Tool" which will later be used to change to different tools like fill row etc...
