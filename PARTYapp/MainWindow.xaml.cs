@@ -160,17 +160,17 @@ namespace PARTYapp
             }
             app.Height_Label.Content = "Height: " + HeightBox.Text;
             app.Width_Label.Content = "Width: " + WidthBox.Text;
-            app.Show();
-            this.Close();
+            app.Show();//Shows PARTY_WINDOW once the canvas is loaded
+            this.Close();//closes MainWindow
         }
 
-        private void HeightSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        private void HeightSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)//allows user to set height
         {
             HeightSlider.Value = Math.Round(HeightSlider.Value, 0);
             HeightBox.Text = Convert.ToString(HeightSlider.Value);
         }
 
-        private void HeightBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void HeightBox_TextChanged(object sender, TextChangedEventArgs e)//holds value of height of the canavs
         {
             HeightSlider.IsSnapToTickEnabled = true;
             HeightSlider.TickPlacement = System.Windows.Controls.Primitives.TickPlacement.TopLeft;
@@ -180,14 +180,14 @@ namespace PARTYapp
             
         }
 
-        private void WidthSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        private void WidthSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)//allows user to set width
         {
             WidthSlider.Value = Math.Round(WidthSlider.Value, 0);
             WidthBox.Text = Convert.ToString(WidthSlider.Value);
         }
 
 
-        private void WidthBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void WidthBox_TextChanged(object sender, TextChangedEventArgs e)//holds value of canvas width
         {
             WidthSlider.IsSnapToTickEnabled = true;
             WidthSlider.TickPlacement = System.Windows.Controls.Primitives.TickPlacement.TopLeft;

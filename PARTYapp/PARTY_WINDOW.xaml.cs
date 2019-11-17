@@ -24,7 +24,7 @@ namespace PARTYapp
     public partial class PARTY_WINDOW : Window
     {
         public int Colour = 0;//Global variable to keep track of colour changes
-        public int Tool = 0;
+        public int Tool = 0;//not in use yet
         public PARTY_WINDOW()
         {
 
@@ -32,7 +32,7 @@ namespace PARTYapp
             
         }
 
-        public void Button_Click(object sender, EventArgs e) //This is the function that 
+        public void Button_Click(object sender, EventArgs e) //This is the function that changes the colours of the clicked pixel
         {
             Button btn = sender as Button;
 
@@ -198,12 +198,12 @@ namespace PARTYapp
 
         }//end of clear buttons function
 
-        private void Height_Label_Click(object sender, RoutedEventArgs e)
+        private void Height_Label_Click(object sender, RoutedEventArgs e)//just displays width and height
         {
 
         }
 
-        private void Save_Button_Click(object sender, RoutedEventArgs e)
+        private void Save_Button_Click(object sender, RoutedEventArgs e)//not yet implemented
         {
 
         }
