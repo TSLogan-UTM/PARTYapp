@@ -23,93 +23,84 @@ namespace PARTYapp
     /// </summary>
     public partial class PARTY_WINDOW : Window
     {
-        public int Colour = 0;
+        public int Colour = 0;//Global variable to keep track of colour changes
+        public int Tool = 0;
         public PARTY_WINDOW()
         {
 
             InitializeComponent();
-
+            
         }
 
-        public void Button_Click(object sender, EventArgs e)
+        public void Button_Click(object sender, EventArgs e) //This is the function that 
         {
             Button btn = sender as Button;
-            if(Colour == 0)
+
+            if (Colour == 0)
             {
                 btn.Background = Brushes.Black;
             }
-            if(Colour == 1)
+            if (Colour == 1)
             {
                 btn.Background = Brushes.Red;
             }
-            if(Colour == 2)
+            if (Colour == 2)
             {
                 btn.Background = Brushes.LimeGreen;
             }
-            if(Colour == 3)
+            if (Colour == 3)
             {
                 btn.Background = Brushes.Blue;
             }
-            if(Colour == 4)
+            if (Colour == 4)
             {
                 btn.Background = Brushes.White;
             }
-            if(Colour == 5)
+            if (Colour == 5)
             {
                 btn.Background = Brushes.Cyan;
             }
-            if(Colour == 6)
+            if (Colour == 6)
             {
                 btn.Background = Brushes.Purple;
             }
-            if(Colour == 7)
+            if (Colour == 7)
             {
-                btn.Background = Brushes.Yellow;
+            btn.Background = Brushes.Yellow;
             }
-            if(Colour == 8)
+            if (Colour == 8)
             {
                 btn.Background = Brushes.SaddleBrown;
             }
-            if(Colour == 9)
+            if (Colour == 9)
             {
                 btn.Background = Brushes.Gray;
             }
-        }
 
-        private void WB_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            
-            WB.IsReadOnly = true;
-        }
-
-        private void HB_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            
-            HB.IsReadOnly = true;
-
-            
         }
 
 
-        private void CtrlAltYeet_Click(object sender, RoutedEventArgs e)
+        private void CtrlAltYeet_Click(object sender, RoutedEventArgs e)//The shutdown button that can let the user close the app
         {
-            MessageBoxResult result = MessageBox.Show("Are you Sure?", "PARTY FOUL", MessageBoxButton.YesNo);
+            MessageBoxResult result = MessageBox.Show("Are you Sure? This will close the entire app!!", "PARTY FOUL", MessageBoxButton.YesNo);
 
-            if(result == MessageBoxResult.Yes)
+            if(result == MessageBoxResult.Yes)//if yes is chosen the app is closed
             {
                 App.Current.Shutdown();
             }
-            else
+            else//else the message box closes and the app stays open
             {
                 return;
             }
 
             
-        }
+        }//end of shutdown buttons function
 
-        private void BLACK_BUTTON_Click(object sender, RoutedEventArgs e)
-        {
+        private void BLACK_BUTTON_Click(object sender, RoutedEventArgs e)//This and the following *COLOUR*_BUTTON_Click functions 
+        {                                                                //change the selected colour to *COLOUR*
+            
             Colour = 0;
+            
         }
 
         private void RED_BUTTON_Click(object sender, RoutedEventArgs e)
@@ -155,6 +146,66 @@ namespace PARTYapp
         private void GRAY_BUTTONS_Click(object sender, RoutedEventArgs e)
         {
             Colour = 9;
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)//Clear buttons function 
+        {
+            MessageBoxResult result = MessageBox.Show("Do you really wish to clear your WHOLE canvas?!?", "PARTY FOUL", MessageBoxButton.YesNo);
+
+            if (result == MessageBoxResult.Yes)//If user selects Yes box on pop up message it clears
+            {
+                foreach (Button btn in GRID_25.Children) //Clear function in the case that the canvas is 25x25
+                {
+                    if (btn.GetType() == typeof(Button))
+                    {
+                        Button b = (Button)btn;
+                        b.Background = Brushes.White;
+                    }
+                }//end of 25x25 clear
+
+                foreach (Button btn in GRID_50.Children)//Clear function in the case that the canvas is 50x50
+                {
+                    if (btn.GetType() == typeof(Button))
+                    {
+                        Button b = (Button)btn;
+                        b.Background = Brushes.White;
+                    }
+                }//end of 50x50 clear
+
+                foreach (Button btn in GRID_75.Children)//Clear funtion in the case that the canvas is 75x75
+                {
+                    if (btn.GetType() == typeof(Button))
+                    {
+                        Button b = (Button)btn;
+                        b.Background = Brushes.White;
+                    }
+                }//end of 75x75 clear
+
+                foreach (Button btn in GRID_100.Children)//Clear function in the case that the canvas is 100x100 or not a perfect square
+                {                                        //Note** This is still called if height and width are not the same because the
+                    if (btn.GetType() == typeof(Button)) //100x100 grid is still used to ensure that the canvas does actually fit regardless
+                    {                                    //of the size
+                        Button b = (Button)btn;
+                        b.Background = Brushes.White;
+                    }
+                }//end of 100x100-- clear
+
+            }//end of if conditional to clear
+            else//if the user picks no return to the program and the message closes withou clearing the canvas
+            {
+                return;
+            }//end of else conditional to abort clear
+
+        }//end of clear buttons function
+
+        private void Height_Label_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Save_Button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

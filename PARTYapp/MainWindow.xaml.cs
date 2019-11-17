@@ -28,14 +28,10 @@ namespace PARTYapp
 
             PARTY_WINDOW app = new PARTY_WINDOW();
 
-            app.Show();
-            this.Close();
-            app.HB.Text = HeightBox.Text;
-            app.WB.Text = WidthBox.Text;
-            app.GRID_100.ShowGridLines = false;
-            app.GRID_75.ShowGridLines = false;
-            app.GRID_50.ShowGridLines = false;
-            app.GRID_25.ShowGridLines = false;
+            //app.GRID_100.ShowGridLines = false; These seem redundant because i forgot what my plans with them were
+            //app.GRID_75.ShowGridLines = false;
+            //app.GRID_50.ShowGridLines = false;
+            //app.GRID_25.ShowGridLines = false;
 
             int width = Convert.ToInt32(WidthBox.Text);
             int height = Convert.ToInt32(HeightBox.Text);
@@ -61,7 +57,7 @@ namespace PARTYapp
                             Grid.SetRow(MyControl1, i);
                             app.GRID_25.Children.Add(MyControl1);
 
-                            count++;
+                            
                         }
 
                     }
@@ -162,6 +158,10 @@ namespace PARTYapp
 
                 }
             }
+            app.Height_Label.Content = "Height: " + HeightBox.Text;
+            app.Width_Label.Content = "Width: " + WidthBox.Text;
+            app.Show();
+            this.Close();
         }
 
         private void HeightSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
