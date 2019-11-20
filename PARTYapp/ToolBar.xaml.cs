@@ -22,6 +22,30 @@ namespace PARTYapp
         public ToolBar()
         {
             InitializeComponent();
+            
+            // Set the window to open 25 pixels from the left of the user's screen.
+            // See WindowStartupLocation "Top" in ToolBar.xaml for window indention from top of user's screen.
+            double toolBarOffset = 25;
+            this.Left = SystemParameters.PrimaryScreenWidth - (SystemParameters.PrimaryScreenWidth - (toolBarOffset));
         }
+
+
+        // Trying to get this window to move.
+        Point mousePosition;
+        bool mouseDown;
+
+        private void DockPanel_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            mouseDown = true;
+        }
+
+        private void DockPanel_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseDown)
+            {
+                this.mousePosition = new Point();  
+            }
+        }
+        // ----- END OF TRYING TO GET WINDOW TO MOVE. ---
     }
 }

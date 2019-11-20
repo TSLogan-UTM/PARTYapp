@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PARTYapp"
         mc:Ignorable="d"
-        Title="Tools" Height="400" Width="150">
+        Title="Tools" Height="600" Width="150"
+        WindowStartupLocation="Manual" Top="75" MaxWidth="300" WindowStyle="None">
     <Grid>
-        
+        <DockPanel HorizontalAlignment="Left" Height="25" LastChildFill="False" VerticalAlignment="Top" Width="144" MouseDown="DockPanel_MouseDown" MouseMove="DockPanel_MouseMove"/>
+
     </Grid>
 </Window>

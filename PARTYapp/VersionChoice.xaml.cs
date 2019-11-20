@@ -24,21 +24,40 @@ namespace PARTYapp
             InitializeComponent();
         }
 
+        // Create variable to determine window type.
+        String windowType = "None";
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow basic = new MainWindow();
-            this.Close();
-            basic.Show();
+            windowType = "basic";
+            Show(windowType);
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            //Create an instance of the advanced class and tool bar.
-            Advanced advanced = new Advanced();
-            ToolBar tools = new ToolBar();
-            this.Close();
-            advanced.Show();
-            tools.Show();       //      <<-------- Could probably implement this inside the advanced window similar to how
-        }                       //                 Vincent did the canvas instead.
+            windowType = "advanced";
+            Show(windowType);     
+        }                                   
+
+        public void Show(String windowType)
+        {
+            // Create an instance of the basic program.
+            if (windowType == "basic")
+            {
+                MainWindow basic = new MainWindow();
+                this.Close();
+                basic.Show();
+            }
+
+            // Create an instance of the advanced program.
+            if (windowType == "advanced")
+            {
+                Advanced advanced = new Advanced();
+                ToolBar tools = new ToolBar();
+                this.Close();
+                advanced.Show();
+                tools.Show();       //<< --------Could probably implement this inside the advanced window similar to how
+            }                       //           Vincent did the canvas instead.
+        }
     }
 }
