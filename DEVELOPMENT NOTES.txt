@@ -37,3 +37,16 @@ Vincent Manoli:
 I have updated some aspects of the GUI and added new functionality. There is a blank area between the clear button and the colour area
 that will hold future tools. The save button is in the area just mentioned it does nothing at the moment along with a global 
 variable called "Tool" which will later be used to change to different tools like fill row etc...
+
+11/19/19--------
+
+TSL:
+Made several changes to get us to what I believe will qualify as a factory pattern. Changes include:
+-Updated "startupuri" in App.xaml to default to VersionChoice.xaml so it starts with version selector.
+-Added ShutdownMode="OnLastWindowClose" so the program auto exits when the last window is closed using top right x button.
+-Added Advanced.xaml - we can implement advanced version of program here, 
+       VersionChoice.xaml - Allows for startup version selector box to appear, 
+       VersionChoice.xaml.cs - Code file for the above file, 
+       ToolBar.xaml - my intent is to implement the tools in their own window, canvas in its own window, and the background
+                      as its own window if everyone is good with that.
+-Added additional resource ChoiceBackground.jpg for use as background in Version Selector Window.

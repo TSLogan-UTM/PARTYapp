@@ -33,9 +33,12 @@ namespace PARTYapp
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            //Create an instance of the advanced class and tool bar.
             Advanced advanced = new Advanced();
+            ToolBar tools = new ToolBar();
             this.Close();
             advanced.Show();
-        }
+            tools.Show();       //      <<-------- Could probably implement this inside the advanced window similar to how
+        }                       //                 Vincent did the canvas instead.
     }
 }
