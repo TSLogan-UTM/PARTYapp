@@ -2,7 +2,8 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:PARTYapp"
-             StartupUri="MainWindow.xaml">
+             StartupUri="VersionChoice.xaml"
+             ShutdownMode="OnLastWindowClose">
     <Application.Resources>
         <ResourceDictionary>
             <BitmapImage x:Key="TopBar" UriSource="assets\TopBar.jpg"></BitmapImage>
@@ -26,6 +27,7 @@
             <BitmapImage x:Key="White" UriSource="assets\WhiteBox.jpg"></BitmapImage>
             <BitmapImage x:Key="Yellow" UriSource="assets\YellowBox.jpg"></BitmapImage>
             <BitmapImage x:Key="Default_BackGround" UriSource="assets\Default_BackGround.jpg"></BitmapImage>
+            <BitmapImage x:Key="ChoiceBackground" UriSource="assets\ChoiceBackGround.jpg"></BitmapImage>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
