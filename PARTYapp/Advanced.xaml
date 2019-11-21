@@ -6,8 +6,9 @@
         xmlns:local="clr-namespace:PARTYapp"
         mc:Ignorable="d"
         Title="PARTYapp - A FREE Pixel Art Creator | Advanced Mode" Height="450" Width="800"
-        WindowState="Maximized">
+        WindowState="Maximized" Closing="Window_Closing"
+        Icon="{StaticResource AppIcon}">
     <Grid>
-        
+        <Image Source="{StaticResource PolygonBackground}" Width="3000" Height="2000" Margin= "0,0,0,0"/>
     </Grid>
 </Window>

@@ -53,11 +53,9 @@ namespace PARTYapp
             if (windowType == "advanced")
             {
                 Advanced advanced = new Advanced();
-                ToolBar tools = new ToolBar();
                 this.Close();
                 advanced.Show();
-                tools.Show();       //<< --------Could probably implement this inside the advanced window similar to how
-            }                       //           Vincent did the canvas instead.
+            }                     
         }
     }
 }

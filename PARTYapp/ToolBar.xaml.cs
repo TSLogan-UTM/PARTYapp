@@ -29,23 +29,10 @@ namespace PARTYapp
             this.Left = SystemParameters.PrimaryScreenWidth - (SystemParameters.PrimaryScreenWidth - (toolBarOffset));
         }
 
-
-        // Trying to get this window to move.
-        Point mousePosition;
-        bool mouseDown;
-
-        private void DockPanel_MouseDown(object sender, MouseButtonEventArgs e)
+        private void Title_Bar_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            mouseDown = true;
+            // Declare this for the rectangle used as the title bar to allow the window to be moved.
+            this.DragMove();
         }
-
-        private void DockPanel_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (mouseDown)
-            {
-                this.mousePosition = new Point();  
-            }
-        }
-        // ----- END OF TRYING TO GET WINDOW TO MOVE. ---
     }
 }

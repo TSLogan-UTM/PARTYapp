@@ -28,6 +28,26 @@
             <BitmapImage x:Key="Yellow" UriSource="assets\YellowBox.jpg"></BitmapImage>
             <BitmapImage x:Key="Default_BackGround" UriSource="assets\Default_BackGround.jpg"></BitmapImage>
             <BitmapImage x:Key="ChoiceBackground" UriSource="assets\ChoiceBackGround.jpg"></BitmapImage>
+            <BitmapImage x:Key="PolygonBackground" UriSource="assets\PolygonBackGround.png"></BitmapImage>
+            <BitmapImage x:Key="AppIcon" UriSource="assets\PARTYappIcon.ico"></BitmapImage>
+            <BitmapImage x:Key="ToolBarBackground" UriSource="assets\ToolBarBackground.jpg"></BitmapImage>
+            <BitmapImage x:Key="PixelTool" UriSource="assets\PixelIcon.png"></BitmapImage>
+            <BitmapImage x:Key="RowTool" UriSource="assets\RowIcon.png"></BitmapImage>
+            <BitmapImage x:Key="EraserTool" UriSource="assets\EraserIcon.png"></BitmapImage>
+            <BitmapImage x:Key="SaveTool" UriSource="assets\SaveIcon.png"></BitmapImage>
+            <BitmapImage x:Key="LoadTool" UriSource="assets\LoadIcon.png"></BitmapImage>
+            <BitmapImage x:Key="ClearTool" UriSource="assets\ClearIcon.png"></BitmapImage>
+            <BitmapImage x:Key="SplashTool" UriSource="assets\SplashIcon.png"></BitmapImage>
+            <BitmapImage x:Key="ColorLabel" UriSource="assets\ColorLabel.png"></BitmapImage>
+            <BitmapImage x:Key="PixelColorLabel" UriSource="assets\PixelColor.png"></BitmapImage>
+            <BitmapImage x:Key="RedLabel" UriSource="assets\RLabel.png"></BitmapImage>
+            <BitmapImage x:Key="GreenLabel" UriSource="assets\GLabel.png"></BitmapImage>
+            <BitmapImage x:Key="BlueLabel" UriSource="assets\BLabel.png"></BitmapImage>
+            <BitmapImage x:Key="CanvasWindowBG" UriSource="assets\CanvasWindowBG.jpg"></BitmapImage>
+            <BitmapImage x:Key="CreateCanvasLabel" UriSource="assets\CreateCanvasLabel.png"></BitmapImage>
+            <BitmapImage x:Key="CanvasHeight" UriSource="assets\CanvasHeight.png"></BitmapImage>
+            <BitmapImage x:Key="CanvasWidth" UriSource="assets\CanvasWidth.png"></BitmapImage>
+            <BitmapImage x:Key="100Max" UriSource="assets\100MaxLabel.png"></BitmapImage>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

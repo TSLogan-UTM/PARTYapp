@@ -50,3 +50,18 @@ Made several changes to get us to what I believe will qualify as a factory patte
        ToolBar.xaml - my intent is to implement the tools in their own window, canvas in its own window, and the background
                       as its own window if everyone is good with that.
 -Added additional resource ChoiceBackground.jpg for use as background in Version Selector Window.
+
+11/20/19-----------
+TSL:
+-Another big asset addition. Added ~16 more images.
+-Got the Toolbar in the Advanced window to reliable initialize in the same location.
+-Made the Toolbar borderless and made it so it can still be moved. Resize is not allowed.
+-Got all the icons put into the toolbar.
+-Got the RGB slider created and located correctly in the Toolbar.
+-Made it so the Toolbar window is auto closed when the Advanced window is since it is borderless to make
+ sure the program exits correctly.
+-Redid the Canvas Creation window to have a grid.
+-Created and installed newbackground for Canvas Creation Window.
+-Created .png versions (with clear backgrounds) of all need text for Canvas Creation Window.
+-Redesigned the Canvas Creation Window.
+-Designed a program icon and set it up to display properly on user's PC for ALL windows.

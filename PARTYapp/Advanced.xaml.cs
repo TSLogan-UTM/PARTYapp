@@ -19,9 +19,23 @@ namespace PARTYapp
     /// </summary>
     public partial class Advanced : Window
     {
+        // Create the toolbar window.
+        ToolBar tools = new ToolBar();
+
         public Advanced()
         {
             InitializeComponent();
+            
+            // Show the toolbar in the window.
+            tools.Show();
+            // Make sure the window stays above the background window.
+            tools.Topmost = true;
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            // Close the toolbar at the same time the window is closed.
+            tools.Close();
         }
     }
 }
