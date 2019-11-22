@@ -1,0 +1,75 @@
+﻿<Window x:Class="PARTYapp.ToolBar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PARTYapp"
+        mc:Ignorable="d"
+        Title="Tools" Height="645.985" Width="167.518"
+        WindowStartupLocation="Manual" Top="75" MaxWidth="150" MaxHeight="600" WindowStyle="None"
+        Icon="{StaticResource AppIcon}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Image Source="{StaticResource ToolBarBackground}" Grid.Row="0" Grid.RowSpan="15" Grid.Column="0" Grid.ColumnSpan="4" Margin="-26,0,-31,-35.4"/>
+
+        <Button x:Name="SaveTool" Grid.Row="1" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2" FontSize="22" Background="{x:Null}" BorderBrush="White" Foreground="#FF0600FF" BorderThickness="0,2,0,0">
+            <Image Source="{StaticResource SaveTool}"></Image>
+        </Button>
+        <Button x:Name="LoadTool" Grid.Row="1" Grid.RowSpan="2" Grid.Column="2" Grid.ColumnSpan="2" FontSize="22" Background="{x:Null}" BorderThickness="0,2,0,0" BorderBrush="White">
+            <Image Source="{StaticResource LoadTool}"/>
+        </Button>
+
+        <Button x:Name="PixelTool" Grid.Row="3" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2" FontSize="22" Background="{x:Null}" BorderThickness="0">
+            <Image Source="{StaticResource PixelTool}"/>
+        </Button>
+        <Button x:Name="RowTool" Grid.Row="3" Grid.RowSpan="2" Grid.Column="2" Grid.ColumnSpan="2" FontSize="22" Background="{x:Null}" BorderThickness="0">
+        <Image Source="{StaticResource RowTool}"/>
+        </Button>
+        <Button x:Name="SplashTool" Grid.Row="5" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2" FontSize="22" Background="{x:Null}" BorderThickness="0,0,0,2" BorderBrush="White">
+            <Image Source="{StaticResource SplashTool}"/>
+        </Button>
+        <Button x:Name="ClearTool" Grid.Row="5" Grid.RowSpan="2" Grid.Column="2" Grid.ColumnSpan="2" FontSize="22" Background="{x:Null}" BorderBrush="White" BorderThickness="0,0,0,2">
+            <Image Source="{StaticResource ClearTool}"/>
+        </Button>
+
+        <Rectangle x:Name="Title_Bar" Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="0" Height="20" Width="150" HorizontalAlignment="Left" VerticalAlignment="Top" MouseDown="Title_Bar_MouseDown" Fill="White"/>
+
+        <Image Source="{StaticResource ColorLabel}" Grid.Row="11" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button x:Name="Color" Grid.Row="12" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2" Background="LawnGreen" FontSize="22" BorderThickness="3" BorderBrush="Black"/>
+
+        <Image Source="{StaticResource PixelColorLabel}" Grid.Row="7" Grid.ColumnSpan="4"/>
+
+        <Image Source="{StaticResource RedLabel}" Grid.Row="8" Grid.Column="0"/>
+        <Slider Grid.Column="1" Grid.ColumnSpan="3" Margin="10,12,0,0" Grid.Row="8" VerticalAlignment="Top"/>
+        
+        <Image Source="{StaticResource GreenLabel}" Grid.Row="9" Grid.Column="0"/>
+        <Slider Grid.Column="1" Grid.ColumnSpan="3" Margin="10,12,0,0" Grid.Row="9" VerticalAlignment="Top"/>
+
+        <Image Source="{StaticResource BlueLabel}" Grid.Row="10" Grid.Column="0"/>
+        <Slider Grid.Column="1" Grid.ColumnSpan="3" Margin="10,12,0,0" Grid.Row="10" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

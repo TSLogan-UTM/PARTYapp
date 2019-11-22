@@ -56,6 +56,26 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Advanced.xaml.cs">
+      <DependentUpon>Advanced.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WorkGrid.xaml.cs">
+      <DependentUpon>WorkGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ToolBar.xaml.cs">
+      <DependentUpon>ToolBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VersionChoice.xaml.cs">
+      <DependentUpon>VersionChoice.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Advanced.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WorkGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -69,6 +89,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="PARTY_WINDOW.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ToolBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VersionChoice.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -128,6 +156,85 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="assets\Default_BackGround.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\ChoiceBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\PolygonBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\PARTYappIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\ToolBarBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\PixelIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\RowIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\EraserIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\ColorLabel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\RLabel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\GLabel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\BLabel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\SaveIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\LoadIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\ClearIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\PixelColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\SplashIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\CanvasWindowBG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\CreateCanvasLabel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\CanvasHeight.png" />
+    <Resource Include="assets\CanvasWidth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\100MaxLabel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\BasicModeBG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\BasicModeToolBar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\BasicModeLine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\BasicModeRedLine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\BasicModeNo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\BasicModeDrawing.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
