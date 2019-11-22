@@ -43,7 +43,6 @@
         <Image Source="{StaticResource BasicNo}" Width="40" Height="40" Grid.Column="0" Grid.Row="9" Margin="28,2.4,7.2,14.4"/>
         <Image Source="{StaticResource BasicNo}" Width="40" Height="40" Grid.Column="2" Grid.Row="9" Margin="6.6,2.4,29.4,14.4"/>
         <Image Source="{StaticResource CanvasDrawing}" Width="80" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Grid.RowSpan="3" Margin="31,-10,39.4,10.4"/>
-        <Button x:Name="CtrlAltYeet1" Content="Shutdown" Width="75" Height="25" Grid.Row="9" Background="Red" FontWeight="Bold" FontFamily="Times New Roman" Click="CtrlAltYeet_Click" Grid.ColumnSpan="2" Margin="75,10.2,0.4,22.4"/>
         <Button x:Name="RED_BUTTON" Content="RED" Width="70" Height="40"  Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="6" Background="Red" FontFamily="Segoe UI Semibold" FontSize="17" Click="RED_BUTTON_Click" Margin="36,2.4,44.4,14.4"/>
         <Button x:Name="GREEN_BUTTON" Content="GREEN" Width="70" Height="40" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="6" FontFamily="Segoe UI Semibold" FontSize="17" Background="Lime" Click="GREEN_BUTTON_Click" Margin="44.8,2.4,36.4,14.4"/>
         <Button x:Name="BLUE_BUTTON" Content="BLUE" Width="70" Height="40" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="7" FontFamily="Segoe UI Semibold" FontSize="17" Background="Blue" Click="BLUE_BUTTON_Click" Margin="36,2.6,44.4,15"/>
@@ -54,10 +53,10 @@
         <Button x:Name="YELLOW_BUTTON" Content="YELLOW" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="5" Width="70" Height="40" Background="#FFFFFF10" FontFamily="Segoe UI Semibold" FontSize="17" Click="YELLOW_BUTTON_Click" Margin="44.8,2.2,36.4,14.6"/>
         <Button x:Name="BROWN_BUTTON" Content="BROWN" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="4" Width="70" Height="40" Background="#FFAE5126" FontFamily="Segoe UI Semibold" FontSize="17" Click="BROWN_BUTTON_Click" Margin="36,2.8,44.4,14.8"/>
         <Button x:Name="GRAY_BUTTONS" Content="GRAY" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="4" Width="70" Height="40" BorderBrush="#FF555555" Background="#FFB8B8B8" FontFamily="Segoe UI Semibold" FontSize="17" Click="GRAY_BUTTONS_Click" Margin="44.8,2.8,36.4,14.8"/>
-        <Button x:Name="Clear" Content="CLEAR" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="2" Grid.RowSpan="2" Width="70" Height="25" Click="Button_Click_1" Background="Red" FontFamily="Segoe UI Semibold" FontSize="17" Margin="44.8,48.4,36.4,40.2"/>
-        <Button x:Name="Height_Label" x:FieldModifier="public" Content="Height: " Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="0" Grid.RowSpan="2" Width="60" Height="25" Background="#FF19C519" Click="Height_Label_Click" Margin="45.8,46,45.4,42.6"/>
-        <Button x:Name="Width_Label" Content="Width: " Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1" Grid.RowSpan="2" Width="60" Height="25" Background="#FF19C519" Margin="45.8,32.2,45.4,56.4" Click="Width_Label_Click"/>
-        <Button x:Name="Save_Button" Content="SAVE" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" Grid.RowSpan="2" Width="70" Height ="25" FontFamily="Segoe UI Semibold" FontSize="17" Click="Save_Button_Click" Margin="36,48.4,44.4,40.2"/>
+        <Button x:Name="Clear" Content="CLEAR" Grid.Column="1" Grid.Row="9" Width="70" Height="25" Click="Button_Click_1" Background="Red" FontFamily="Segoe UI Semibold" FontSize="17" Margin="4,10,2,22"/>
+        <Button x:Name="Height_Label" x:FieldModifier="public" Content="Height: " Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="0" Grid.RowSpan="2" Height="25" Background="#FF19C519" Click="Height_Label_Click" Margin="46,47,38,43"/>
+        <Button x:Name="Width_Label" Content="Width: " Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1" Height="25" Background="#FF19C519" Margin="46,32,38,0" Click="Width_Label_Click"/>
+        <Button x:Name="Save_Button" Content="SAVE" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" Grid.RowSpan="2" Width="70" Height ="25" FontFamily="Segoe UI Semibold" FontSize="17" Click="Save_Button_Click" Margin="35,49,47,40"/>
 
         <Grid x:Name="GRID_100" Height="515" Width="503" Grid.Column="3" Grid.ColumnSpan="8" Grid.Row="0" Grid.RowSpan="10">
             <Grid.RowDefinitions>
@@ -586,5 +585,6 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
         </Grid>
+        <Button x:Name="Load_Button" Content="LOAD" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="2" Grid.RowSpan="2" Width="70" Height ="25" FontFamily="Segoe UI Semibold" FontSize="17" Click="Load_Button_Click" Margin="44,49,38,40"/>
     </Grid>
 </Window>

@@ -5,10 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PARTYapp"
         mc:Ignorable="d"
-        Title="Grid" Height="600" Width="600"
+        Title="Grid" Height="682" Width="800"
         WindowStartupLocation="CenterScreen"
-        WindowStyle="None">
-    <Grid>
-      
+        WindowStyle="None"
+        ResizeMode="NoResize">
+    <Grid x:Name="WorkingGrid" x:FieldModifier="public">
+
+
     </Grid>
 </Window>
