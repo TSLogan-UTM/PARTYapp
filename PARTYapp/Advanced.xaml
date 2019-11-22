@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PARTYapp"
         mc:Ignorable="d"
-        Title="PARTYapp - A FREE Pixel Art Creator | Advanced Mode" Height="450" Width="800"
+        Title="P.A.R.T.Y. App - A FREE Pixel Art Creator | Advanced Mode" Height="450" Width="800"
         WindowState="Maximized" Closing="Window_Closing"
         Icon="{StaticResource AppIcon}">
     <Grid>

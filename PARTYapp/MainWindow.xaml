@@ -7,7 +7,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PARTYapp"
         mc:Ignorable="d"
-        Title="PARTY App - A FREE Pixel Art Creator " ResizeMode="NoResize" Height="300" Width="342"
+        Title="P.A.R.T.Y. App - A FREE Pixel Art Creator" ResizeMode="NoResize" Height="300" Width="342"
         Icon="{StaticResource AppIcon}"
         WindowStartupLocation="CenterScreen">
     <Grid>

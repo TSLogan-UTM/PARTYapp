@@ -62,6 +62,21 @@ TSL:
  sure the program exits correctly.
 -Redid the Canvas Creation window to have a grid.
 -Created and installed newbackground for Canvas Creation Window.
--Created .png versions (with clear backgrounds) of all need text for Canvas Creation Window.
+-Created .png versions (with clear backgrounds) of all needed text for Canvas Creation Window.
 -Redesigned the Canvas Creation Window.
 -Designed a program icon and set it up to display properly on user's PC for ALL windows.
+
+11/21/19-------------
+TSL:
+-Set up a dummy window and got it to initialize in the center of the screen for the canvas' grid.
+-Went through and completely reworked the grid system in the basic mode window. 
+-Cleaned up a lot of redundant code and made the code more legible and just generally simplier.
+-Designed new graphics for the background, and toolbar.
+-Added ~6 more images to program assets.
+
+11/22/19--------------
+TSL:
+-Set program to display custom icon for the .exe file.
+-Changed the formatting of the buttons in the Version Selection window to match theme a little better.
+-Set the program to display the .exe name as "P.A.R.T.Y. App".
+-Changed the titles of all the windows to more final and professional messages.
