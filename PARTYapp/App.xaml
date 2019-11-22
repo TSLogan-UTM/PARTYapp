@@ -48,6 +48,12 @@
             <BitmapImage x:Key="CanvasHeight" UriSource="assets\CanvasHeight.png"></BitmapImage>
             <BitmapImage x:Key="CanvasWidth" UriSource="assets\CanvasWidth.png"></BitmapImage>
             <BitmapImage x:Key="100Max" UriSource="assets\100MaxLabel.png"></BitmapImage>
+            <BitmapImage x:Key="BasicBG" UriSource="assets\BasicModeBG.jpg"></BitmapImage>
+            <BitmapImage x:Key="BasicToolBar" UriSource="assets\BasicModeToolBar.png"></BitmapImage>
+            <BitmapImage x:Key="BasicLine" UriSource="assets\BasicModeLine.png"></BitmapImage>
+            <BitmapImage x:Key="BasicRedLine" UriSource="assets\BasicModeRedLine.png"></BitmapImage>
+            <BitmapImage x:Key="BasicNo" UriSource="assets\BasicModeNo.png"></BitmapImage>
+            <BitmapImage x:Key="CanvasDrawing" UriSource="assets\BasicModeDrawing.png"></BitmapImage>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

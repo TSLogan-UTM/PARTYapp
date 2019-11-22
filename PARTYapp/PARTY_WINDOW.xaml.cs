@@ -207,5 +207,10 @@ namespace PARTYapp
         {
 
         }
+
+        private void Width_Label_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
