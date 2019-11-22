@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="PARTY app - A FREE Pixel Art Creator | Basic Mode" ResizeMode="NoResize" Height="600" Width="762"
         Icon="{StaticResource AppIcon}"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen" BorderBrush="#FF0015FF">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
