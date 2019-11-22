@@ -59,7 +59,7 @@
         <Rectangle x:Name="Title_Bar" Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="0" Height="20" Width="150" HorizontalAlignment="Left" VerticalAlignment="Top" MouseDown="Title_Bar_MouseDown" Fill="White"/>
 
         <Image Source="{StaticResource ColorLabel}" Grid.Row="11" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <Button x:Name="ColorBox" x:FieldModifier="public" Grid.Row="12" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2" Background="Black" FontSize="22" BorderThickness="3" BorderBrush="Black"/>
+        <Button x:Name="ColorBox" x:FieldModifier="public" Grid.Row="12" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2" Background="Black" FontSize="22" BorderThickness="3" BorderBrush="White" IsHitTestVisible="False"/>
 
         <Image Source="{StaticResource PixelColorLabel}" Grid.Row="7" Grid.ColumnSpan="4"/>
 
