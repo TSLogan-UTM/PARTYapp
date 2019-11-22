@@ -79,23 +79,6 @@ namespace PARTYapp
 
         }
 
-
-        private void CtrlAltYeet_Click(object sender, RoutedEventArgs e)//The shutdown button that can let the user close the app
-        {
-            MessageBoxResult result = MessageBox.Show("Are you Sure? This will close the entire app!!", "PARTY FOUL", MessageBoxButton.YesNo);
-
-            if(result == MessageBoxResult.Yes)//if yes is chosen the app is closed
-            {
-                App.Current.Shutdown();
-            }
-            else//else the message box closes and the app stays open
-            {
-                return;
-            }
-
-            
-        }//end of shutdown buttons function
-
         private void BLACK_BUTTON_Click(object sender, RoutedEventArgs e)//This and the following *COLOUR*_BUTTON_Click functions 
         {                                                                //change the selected colour to *COLOUR*
             
@@ -209,6 +192,11 @@ namespace PARTYapp
         }
 
         private void Width_Label_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Load_Button_Click(object sender, RoutedEventArgs e)
         {
 
         }

@@ -47,29 +47,29 @@
             <Image Source="{StaticResource PixelTool}"/>
         </Button>
         <Button x:Name="RowTool" Grid.Row="3" Grid.RowSpan="2" Grid.Column="2" Grid.ColumnSpan="2" FontSize="22" Background="{x:Null}" BorderThickness="0">
-        <Image Source="{StaticResource RowTool}"/>
+            <Image Source="{StaticResource RowTool}"/>
         </Button>
         <Button x:Name="SplashTool" Grid.Row="5" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2" FontSize="22" Background="{x:Null}" BorderThickness="0,0,0,2" BorderBrush="White">
             <Image Source="{StaticResource SplashTool}"/>
         </Button>
-        <Button x:Name="ClearTool" Grid.Row="5" Grid.RowSpan="2" Grid.Column="2" Grid.ColumnSpan="2" FontSize="22" Background="{x:Null}" BorderBrush="White" BorderThickness="0,0,0,2">
+        <Button x:Name="ClearTool" Grid.Row="5" Grid.RowSpan="2" Grid.Column="2" Grid.ColumnSpan="2" Click="ClearButton_Click" FontSize="22" Background="{x:Null}" BorderBrush="White" BorderThickness="0,0,0,2">
             <Image Source="{StaticResource ClearTool}"/>
         </Button>
 
         <Rectangle x:Name="Title_Bar" Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="0" Height="20" Width="150" HorizontalAlignment="Left" VerticalAlignment="Top" MouseDown="Title_Bar_MouseDown" Fill="White"/>
 
         <Image Source="{StaticResource ColorLabel}" Grid.Row="11" Grid.Column="1" Grid.ColumnSpan="2"/>
-        <Button x:Name="Color" Grid.Row="12" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2" Background="LawnGreen" FontSize="22" BorderThickness="3" BorderBrush="Black"/>
+        <Button x:Name="ColorBox" x:FieldModifier="public" Grid.Row="12" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2" Background="Black" FontSize="22" BorderThickness="3" BorderBrush="Black"/>
 
         <Image Source="{StaticResource PixelColorLabel}" Grid.Row="7" Grid.ColumnSpan="4"/>
 
         <Image Source="{StaticResource RedLabel}" Grid.Row="8" Grid.Column="0"/>
-        <Slider Grid.Column="1" Grid.ColumnSpan="3" Margin="10,12,0,0" Grid.Row="8" VerticalAlignment="Top"/>
-        
+        <Slider x:Name="RedSlider" Grid.ColumnSpan="3" Minimum="0" Maximum="255" Margin="10,11,-1,10" Grid.Row="8" ValueChanged="RedSlider_ValueChanged" Grid.Column="1"/>
+
         <Image Source="{StaticResource GreenLabel}" Grid.Row="9" Grid.Column="0"/>
-        <Slider Grid.Column="1" Grid.ColumnSpan="3" Margin="10,12,0,0" Grid.Row="9" VerticalAlignment="Top"/>
+        <Slider x:Name="GreenSlider" Minimum="0" Maximum="255" Grid.ColumnSpan="3" Margin="9,12,0,0" Grid.Row="9" VerticalAlignment="Top" ValueChanged="GreenSlider_ValueChanged" Grid.Column="1"/>
 
         <Image Source="{StaticResource BlueLabel}" Grid.Row="10" Grid.Column="0"/>
-        <Slider Grid.Column="1" Grid.ColumnSpan="3" Margin="10,12,0,0" Grid.Row="10" VerticalAlignment="Top"/>
+        <Slider x:Name="BlueSlider" Minimum="0" Maximum="255" Grid.ColumnSpan="3" Margin="8,11,1,0" Grid.Row="10" VerticalAlignment="Top" ValueChanged="BlueSlider_ValueChanged" Grid.Column="1"/>
     </Grid>
 </Window>

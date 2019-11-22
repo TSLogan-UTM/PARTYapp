@@ -25,93 +25,119 @@ namespace PARTYapp
         
         private void CreateButton_Click(object sender, RoutedEventArgs e)
         {
-
-            PARTY_WINDOW app = new PARTY_WINDOW();
-
-            //app.GRID_100.ShowGridLines = false; These seem redundant because i forgot what my plans with them were
-            //app.GRID_75.ShowGridLines = false;
-            //app.GRID_50.ShowGridLines = false;
-            //app.GRID_25.ShowGridLines = false;
-
             int width = Convert.ToInt32(WidthBox.Text);
             int height = Convert.ToInt32(HeightBox.Text);
-
-            if (width == height)//Checks if grid is a square (this is ideal)
+            if (Convert.ToString(Version.Content) == "Version: basic")
             {
-                if (width == 25) // in the case that width does equal height and either is equal to 25
+                PARTY_WINDOW app = new PARTY_WINDOW();
+
+                //app.GRID_100.ShowGridLines = false; These seem redundant because i forgot what my plans with them were
+                //app.GRID_75.ShowGridLines = false;
+                //app.GRID_50.ShowGridLines = false;
+                //app.GRID_25.ShowGridLines = false;
+
+                
+
+                if (width == height)//Checks if grid is a square (this is ideal)
                 {
-                    int count = 1;
-
-                    for (int i = 0; i < height; i++)
+                    if (width == 25) // in the case that width does equal height and either is equal to 25
                     {
-                        for (int j = 0; j < width; j++)
+                        int count = 1;
+
+                        for (int i = 0; i < height; i++)
                         {
-                            
-                            Button MyControl1 = new Button();
-                            MyControl1.Content = "";
-                            MyControl1.Name = "Button" + count.ToString();
-                            MyControl1.Background = Brushes.White;
-                            MyControl1.Click += new RoutedEventHandler(app.Button_Click);
+                            for (int j = 0; j < width; j++)
+                            {
 
-                            Grid.SetColumn(MyControl1, j);
-                            Grid.SetRow(MyControl1, i);
-                            app.GRID_25.Children.Add(MyControl1);
+                                Button MyControl1 = new Button();
+                                MyControl1.Content = "";
+                                MyControl1.Name = "Button" + count.ToString();
+                                MyControl1.Background = Brushes.White;
+                                MyControl1.Click += new RoutedEventHandler(app.Button_Click);
 
-                            
+                                Grid.SetColumn(MyControl1, j);
+                                Grid.SetRow(MyControl1, i);
+                                app.GRID_25.Children.Add(MyControl1);
+
+
+                            }
+
                         }
+                    } //End of if statement for 25
 
-                    }
-                } //End of if statement for 25
-
-                if (width == 50) // in the case that width does equal height and either is equal to 50
-                {
-                    int count = 1;
-
-                    for (int i = 0; i < height; i++)
+                    if (width == 50) // in the case that width does equal height and either is equal to 50
                     {
-                        for (int j = 0; j < width; j++)
+                        int count = 1;
+
+                        for (int i = 0; i < height; i++)
                         {
-                            Button MyControl1 = new Button();
-                            MyControl1.Content = "";
-                            MyControl1.Name = "Button" + count.ToString();
-                            MyControl1.Background = Brushes.White;
-                            MyControl1.Click += new RoutedEventHandler(app.Button_Click);
+                            for (int j = 0; j < width; j++)
+                            {
+                                Button MyControl1 = new Button();
+                                MyControl1.Content = "";
+                                MyControl1.Name = "Button" + count.ToString();
+                                MyControl1.Background = Brushes.White;
+                                MyControl1.Click += new RoutedEventHandler(app.Button_Click);
 
-                            Grid.SetColumn(MyControl1, j);
-                            Grid.SetRow(MyControl1, i);
-                            app.GRID_50.Children.Add(MyControl1);
+                                Grid.SetColumn(MyControl1, j);
+                                Grid.SetRow(MyControl1, i);
+                                app.GRID_50.Children.Add(MyControl1);
 
-                            count++;
+                                count++;
+                            }
+
                         }
+                    }//End of if statement for 50
 
-                    }
-                }//End of if statement for 50
-
-                if (width == 75) // in the case that width does equal height and either is equal to 75
-                {
-                    int count = 1;
-
-                    for (int i = 0; i < height; i++)
+                    if (width == 75) // in the case that width does equal height and either is equal to 75
                     {
-                        for (int j = 0; j < width; j++)
+                        int count = 1;
+
+                        for (int i = 0; i < height; i++)
                         {
-                            Button MyControl1 = new Button();
-                            MyControl1.Content = "";
-                            MyControl1.Name = "Button" + count.ToString();
-                            MyControl1.Background = Brushes.White;
-                            MyControl1.Click += new RoutedEventHandler(app.Button_Click);
+                            for (int j = 0; j < width; j++)
+                            {
+                                Button MyControl1 = new Button();
+                                MyControl1.Content = "";
+                                MyControl1.Name = "Button" + count.ToString();
+                                MyControl1.Background = Brushes.White;
+                                MyControl1.Click += new RoutedEventHandler(app.Button_Click);
 
-                            Grid.SetColumn(MyControl1, j);
-                            Grid.SetRow(MyControl1, i);
-                            app.GRID_75.Children.Add(MyControl1);
+                                Grid.SetColumn(MyControl1, j);
+                                Grid.SetRow(MyControl1, i);
+                                app.GRID_75.Children.Add(MyControl1);
 
-                            count++;
+                                count++;
+                            }
+
                         }
+                    }//End of if statement for 75
 
-                    }
-                }//End of if statement for 75
+                    if (width == 100) // in the case that width does equal height and either is equal to 100
+                    {
+                        int count = 1;
 
-                if (width == 100) // in the case that width does equal height and either is equal to 100
+                        for (int i = 0; i < height; i++)
+                        {
+                            for (int j = 0; j < width; j++)
+                            {
+                                Button MyControl1 = new Button();
+                                MyControl1.Content = "";
+                                MyControl1.Name = "Button" + count.ToString();
+                                MyControl1.Background = Brushes.White;
+                                MyControl1.Click += new RoutedEventHandler(app.Button_Click);
+
+                                Grid.SetColumn(MyControl1, j);
+                                Grid.SetRow(MyControl1, i);
+                                app.GRID_100.Children.Add(MyControl1);
+
+                                count++;
+                            }
+
+                        }
+                    }//End of if statement for 100
+                }//End of large if statement that checks for squares and reacts accordingly
+                else//incase the canvas is not a perfect square and the 100x100 grid has to be use to ensure all pixels fit
                 {
                     int count = 1;
 
@@ -133,35 +159,25 @@ namespace PARTYapp
                         }
 
                     }
-                }//End of if statement for 100
-            }//End of large if statement that checks for squares and reacts accordingly
-            else//incase the canvas is not a perfect square and the 100x100 grid has to be use to ensure all pixels fit
-            {
-                int count = 1;
-
-                for (int i = 0; i < height; i++)
-                {
-                    for (int j = 0; j < width; j++)
-                    {
-                        Button MyControl1 = new Button();
-                        MyControl1.Content = "";
-                        MyControl1.Name = "Button" + count.ToString();
-                        MyControl1.Background = Brushes.White;
-                        MyControl1.Click += new RoutedEventHandler(app.Button_Click);
-
-                        Grid.SetColumn(MyControl1, j);
-                        Grid.SetRow(MyControl1, i);
-                        app.GRID_100.Children.Add(MyControl1);
-
-                        count++;
-                    }
-
                 }
+                app.Height_Label.Content = "Height: " + HeightBox.Text;
+                app.Width_Label.Content = "Width: " + WidthBox.Text;
+                app.Show();//Shows PARTY_WINDOW once the canvas is loaded
+                this.Close();//closes MainWindow
             }
-            app.Height_Label.Content = "Height: " + HeightBox.Text;
-            app.Width_Label.Content = "Width: " + WidthBox.Text;
-            app.Show();//Shows PARTY_WINDOW once the canvas is loaded
-            this.Close();//closes MainWindow
+            else if(Convert.ToString(Version.Content) == "Version: advanced")
+            {
+                Advanced adv = new Advanced();
+
+                WorkGrid work = new WorkGrid(height, width);
+
+                work.Topmost = true;
+                adv.Show();
+
+                work.Show();
+                this.Close();
+
+            }
         }
 
         private void HeightSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)//allows user to set height
@@ -204,6 +220,11 @@ namespace PARTYapp
             
             InitializeComponent();
             
+
+        }
+
+        private void Version_Button_Click(object sender, RoutedEventArgs e)
+        {
 
         }
     }

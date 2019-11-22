@@ -39,7 +39,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Button x:Name="CreateButton" Grid.Row="5" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="3" Width="150" Height="50" x:FieldModifier="public" Background="LawnGreen" Content="CREATE!" FontSize="28" FontFamily="Calibri" FontWeight="Bold" Click="CreateButton_Click"/>
+        <Button x:Name="CreateButton" Grid.Row="5" Grid.RowSpan="2" Grid.Column="2" Grid.ColumnSpan="3" Width="150" Height="50" x:FieldModifier="public" Background="LawnGreen" Content="CREATE!" FontSize="28" FontFamily="Calibri" FontWeight="Bold" Click="CreateButton_Click" Margin="41,5.333,10,22.333"/>
         <TextBox x:Name="HeightBox"  Grid.Row="2" Grid.Column="1" Height="23" Width="32" TextWrapping="Wrap" TextChanged="HeightBox_TextChanged" />
         <Slider x:Name="HeightSlider"  Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" x:FieldModifier="public" Width="117" Height="18" ValueChanged="HeightSlider_ValueChanged" Maximum="100" Minimum="25" TickFrequency="25" TickPlacement="TopLeft"/>
         <TextBox x:Name="WidthBox" Grid.Row="3" Grid.RowSpan="2" Grid.Column="1" Height="23" TextWrapping="Wrap" Width="32" TextChanged="WidthBox_TextChanged" />
@@ -49,6 +49,7 @@
         <Image Source="{StaticResource CanvasWidth}" Grid.Row="3" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="1"/>
         <Image Source="{StaticResource 100Max}" Grid.Row="2" Grid.Column="4" Grid.ColumnSpan="1"/>
         <Image Source="{StaticResource 100Max}" Grid.Row="3" Grid.RowSpan="2" Grid.Column="4" Grid.ColumnSpan="1"/>
+        <Button x:Name="Version" Grid.Row="5" Grid.RowSpan="2" Grid.ColumnSpan="3" Width="150" Height="50" x:FieldModifier="public" Background="LawnGreen" Content="Version: " FontFamily="Calibri" FontWeight="Bold" Click="Version_Button_Click" Margin="10,5.333,42,22.333" FontSize="17"/>
 
     </Grid>
 </Window>

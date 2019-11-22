@@ -19,6 +19,7 @@ namespace PARTYapp
     /// </summary>
     public partial class VersionChoice : Window
     {
+        
         public VersionChoice()
         {
             InitializeComponent();
@@ -45,6 +46,7 @@ namespace PARTYapp
             if (windowType == "basic")
             {
                 MainWindow basic = new MainWindow();
+                basic.Version.Content = basic.Version.Content + windowType;
                 this.Close();
                 basic.Show();
             }
@@ -52,9 +54,10 @@ namespace PARTYapp
             // Create an instance of the advanced program.
             if (windowType == "advanced")
             {
-                Advanced advanced = new Advanced();
+                MainWindow adv = new MainWindow();
+                adv.Version.Content = adv.Version.Content + windowType;
                 this.Close();
-                advanced.Show();
+                adv.Show();
             }                     
         }
     }
