@@ -40,15 +40,15 @@
             </Image.RenderTransform>
         </Image>
         <Button x:Name="CreateButton" Grid.Row="5" Grid.RowSpan="2" Grid.Column="2" Grid.ColumnSpan="3" Width="150" Height="50" x:FieldModifier="public" Background="LawnGreen" Content="CREATE!" FontSize="28" FontFamily="Calibri" FontWeight="Bold" Click="CreateButton_Click" Margin="41,5.333,10,22.333"/>
-        <TextBox x:Name="HeightBox"  Grid.Row="2" Grid.Column="1" Height="23" Width="32" TextWrapping="Wrap" TextChanged="HeightBox_TextChanged" />
-        <Slider x:Name="HeightSlider"  Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" x:FieldModifier="public" Width="117" Height="18" ValueChanged="HeightSlider_ValueChanged" Maximum="100" Minimum="25" TickFrequency="25" TickPlacement="TopLeft"/>
-        <TextBox x:Name="WidthBox" Grid.Row="3" Grid.RowSpan="2" Grid.Column="1" Height="23" TextWrapping="Wrap" Width="32" TextChanged="WidthBox_TextChanged" />
-        <Slider x:Name="WidthSlider" Grid.Row="3" Grid.RowSpan="2" Grid.Column="2" Grid.ColumnSpan="2" x:FieldModifier="public" Width="117" Height="18" ValueChanged="WidthSlider_ValueChanged" Maximum="100" Minimum="25" TickFrequency="25" TickPlacement="TopLeft"/>
+        <TextBox x:Name="HeightBox"  Grid.Row="2" Grid.Column="1" Height="23" Width="32" TextWrapping="Wrap" TextChanged="HeightBox_TextChanged" Margin="23.8,8.2,11.4,8" />
+        <Slider x:Name="HeightSlider"  Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" x:FieldModifier="public" Width="117" Height="18" ValueChanged="HeightSlider_ValueChanged" Maximum="100" Minimum="25" TickFrequency="25" TickPlacement="TopLeft" Margin="14.6,10.2,2.8,11"/>
+        <TextBox x:Name="WidthBox" Grid.Row="3" Grid.RowSpan="2" Grid.Column="1" Height="23" TextWrapping="Wrap" Width="32" TextChanged="WidthBox_TextChanged" Margin="23.8,27,11.4,27.6" />
+        <Slider x:Name="WidthSlider" Grid.Row="3" Grid.RowSpan="2" Grid.Column="2" Grid.ColumnSpan="2" x:FieldModifier="public" Width="117" Height="18" ValueChanged="WidthSlider_ValueChanged" Maximum="100" Minimum="25" TickFrequency="25" TickPlacement="TopLeft" Margin="14.6,30,2.8,29.6"/>
         <Image Source="{StaticResource CreateCanvasLabel}" Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="5"/>
-        <Image Source="{StaticResource CanvasHeight}" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="1"/>
-        <Image Source="{StaticResource CanvasWidth}" Grid.Row="3" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="1"/>
-        <Image Source="{StaticResource 100Max}" Grid.Row="2" Grid.Column="4" Grid.ColumnSpan="1"/>
-        <Image Source="{StaticResource 100Max}" Grid.Row="3" Grid.RowSpan="2" Grid.Column="4" Grid.ColumnSpan="1"/>
+        <Image Source="{StaticResource CanvasHeight}" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="6,0.2,61.4,0"/>
+        <Image Source="{StaticResource CanvasWidth}" Grid.Row="3" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="6,0,61.4,38.8"/>
+        <Image Source="{StaticResource 100Max}" Grid.Row="2" Grid.Column="4" Grid.ColumnSpan="1" Margin="6.2,0.2,-6,0"/>
+        <Image Source="{StaticResource 100Max}" Grid.Row="3" Grid.RowSpan="3" Grid.Column="4" Grid.ColumnSpan="1" Margin="6.2,0,-6,38.8"/>
         <Button x:Name="Version" Grid.Row="5" Grid.RowSpan="2" Grid.ColumnSpan="3" Width="150" Height="50" x:FieldModifier="public" Background="LawnGreen" Content="Version: " FontFamily="Calibri" FontWeight="Bold" Click="Version_Button_Click" Margin="10,5.333,42,22.333" FontSize="17"/>
 
     </Grid>
