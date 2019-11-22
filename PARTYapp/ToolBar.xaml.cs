@@ -31,7 +31,7 @@ namespace PARTYapp
 
         private void Title_Bar_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            // Declare this for the rectangle used as the title bar to allow the window to be moved.
+            // Declare this for the rectangle used as the title bar to allow the window to be moved...
             this.DragMove();
         }
     }

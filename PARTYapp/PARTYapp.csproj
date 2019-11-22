@@ -59,6 +59,9 @@
     <Compile Include="Advanced.xaml.cs">
       <DependentUpon>Advanced.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WorkGrid.xaml.cs">
+      <DependentUpon>WorkGrid.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ToolBar.xaml.cs">
       <DependentUpon>ToolBar.xaml</DependentUpon>
     </Compile>
@@ -66,6 +69,10 @@
       <DependentUpon>VersionChoice.xaml</DependentUpon>
     </Compile>
     <Page Include="Advanced.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WorkGrid.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -210,6 +217,24 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="assets\100MaxLabel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\BasicModeBG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\BasicModeToolBar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\BasicModeLine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\BasicModeRedLine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\BasicModeNo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\BasicModeDrawing.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

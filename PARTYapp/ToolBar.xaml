@@ -56,7 +56,7 @@
             <Image Source="{StaticResource ClearTool}"/>
         </Button>
 
-        <Rectangle x:Name="Title_Bar" Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="0" Height="20" Width="150" Fill="White" HorizontalAlignment="Left" VerticalAlignment="Top" MouseDown="Title_Bar_MouseDown"/>
+        <Rectangle x:Name="Title_Bar" Grid.Column="0" Grid.ColumnSpan="4" Grid.Row="0" Height="20" Width="150" HorizontalAlignment="Left" VerticalAlignment="Top" MouseDown="Title_Bar_MouseDown" Fill="White"/>
 
         <Image Source="{StaticResource ColorLabel}" Grid.Row="11" Grid.Column="1" Grid.ColumnSpan="2"/>
         <Button x:Name="Color" Grid.Row="12" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2" Background="LawnGreen" FontSize="22" BorderThickness="3" BorderBrush="Black"/>
