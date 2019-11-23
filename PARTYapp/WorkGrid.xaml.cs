@@ -28,7 +28,121 @@ namespace PARTYapp
             eventHandler.Topmost = true;
             eventHandler.Show();
             AppWindow = this;
-            
+
+            // Declare variables to make the canvas larger based on values.
+            // If height is 25 or less.
+            if (height <= 25)
+            {
+                if (width <= 25)
+                {
+                    this.Height = height * 24;
+                    this.Width = width * 24;
+                }
+
+                else if (width > 25 && width <= 50)
+                {
+                    this.Height = height * 23;
+                    this.Width = width * 22;
+                }
+
+                else if (width > 50 && width <= 75)
+                {
+                    this.Height = height * 17;
+                    this.Width = width * 15;
+                }
+
+                else
+                {
+                    this.Height = height * 15.5;
+                    this.Width = width * 11.5;
+                }
+            }
+
+            // If height is between 26 and 50.
+            if (height > 25 && height <= 50)
+            {
+                if (width <= 25)
+                {
+                    this.Height = height * 12;
+                    this.Width = width * 16;
+                }
+
+                else if (width > 25 && width <= 50)
+                {
+                    this.Height = height * 12;
+                    this.Width = width * 12;
+                }
+
+                else if (width > 50 && width <= 75)
+                {
+                    this.Height = height * 12;
+                    this.Width = width * 12;
+                }
+
+                else
+                {
+                    this.Height = height * 11.5;
+                    this.Width = width * 10.5;
+                }
+            }
+
+            // If height is between 51 and 75.
+            if (height > 50 && height <= 75)
+            {
+                if (width <= 25)
+                {
+                    this.Height = height * 8;
+                    this.Width = width * 10;
+                }
+
+                else if (width > 25 && width <= 50)
+                {
+                    this.Height = height * 8;
+                    this.Width = width * 9.5;
+                }
+
+                else if (width > 50 && width <= 75)
+                {
+                    this.Height = height * 8;
+                    this.Width = width * 8;
+                }
+
+                else
+                {
+                    this.Height = height * 8;
+                    this.Width = width * 9.5;
+                }
+            }
+
+            // If height is between 76 and 100.
+            if (height > 75 && height <= 100)
+            {
+                if (width <= 25)
+                {
+                    this.Height = height * 6;
+                    this.Width = width * 8.5;
+                }
+
+                else if (width > 25 && width <= 50)
+                {
+                    this.Height = height * 6;
+                    this.Width = width * 8.5;
+                }
+
+                else if (width > 50 && width <= 75)
+                {
+                    this.Height = height * 6;
+                    this.Width = width * 8.5;
+                }
+
+                else
+                {
+                    this.Height = height * 6;
+                    this.Width = width * 6;
+                }
+            }
+
+
             for (int i = 0; i < width; i++)
             {
                 WorkingGrid.ColumnDefinitions.Add(new ColumnDefinition());

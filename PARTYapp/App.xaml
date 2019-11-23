@@ -54,6 +54,7 @@
             <BitmapImage x:Key="BasicRedLine" UriSource="assets\BasicModeRedLine.png"></BitmapImage>
             <BitmapImage x:Key="BasicNo" UriSource="assets\BasicModeNo.png"></BitmapImage>
             <BitmapImage x:Key="CanvasDrawing" UriSource="assets\BasicModeDrawing.png"></BitmapImage>
+            <BitmapImage x:Key="BasicLabel" UriSource="assets\BasicVersionLabel.png"></BitmapImage>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

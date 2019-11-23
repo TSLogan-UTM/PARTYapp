@@ -27,7 +27,7 @@ namespace PARTYapp
         {
             int width = Convert.ToInt32(WidthBox.Text);
             int height = Convert.ToInt32(HeightBox.Text);
-            if (Convert.ToString(Version.Content) == "Version: basic")
+            if (Convert.ToString(Version.Content) == "Version: Basic")
             {
                 PARTY_WINDOW app = new PARTY_WINDOW();
 
@@ -165,7 +165,7 @@ namespace PARTYapp
                 app.Show();//Shows PARTY_WINDOW once the canvas is loaded
                 this.Close();//closes MainWindow
             }
-            else if(Convert.ToString(Version.Content) == "Version: advanced")
+            else if(Convert.ToString(Version.Content) == "Version: Advanced")
             {
                 Advanced adv = new Advanced();
 

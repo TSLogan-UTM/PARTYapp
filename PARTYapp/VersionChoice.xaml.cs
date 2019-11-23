@@ -30,32 +30,38 @@ namespace PARTYapp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            windowType = "basic";
+            windowType = "Basic";
             Show(windowType);
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            windowType = "advanced";
+            windowType = "Advanced";
             Show(windowType);     
         }                                   
 
         public void Show(String windowType)
         {
             // Create an instance of the basic program.
-            if (windowType == "basic")
+            if (windowType == "Basic")
             {
                 MainWindow basic = new MainWindow();
                 basic.Version.Content = basic.Version.Content + windowType;
+                basic.Message1.Content = "25x25 or 50x50";
+                basic.Message2.Content = "Recommended";
                 this.Close();
                 basic.Show();
             }
 
             // Create an instance of the advanced program.
-            if (windowType == "advanced")
+            if (windowType == "Advanced")
             {
                 MainWindow adv = new MainWindow();
                 adv.Version.Content = adv.Version.Content + windowType;
+                adv.Message1.Foreground = Brushes.Black;
+                adv.Message2.Foreground = Brushes.Black;
+                adv.Message1.Content = "Remember, 1 to 1";
+                adv.Message2.Content = "ratios work best...";
                 this.Close();
                 adv.Show();
             }                     
