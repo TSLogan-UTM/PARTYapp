@@ -49,7 +49,8 @@
         <Image Source="{StaticResource CanvasWidth}" Grid.Row="3" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="6,0,61.4,38.8"/>
         <Image Source="{StaticResource 100Max}" Grid.Row="2" Grid.Column="4" Grid.ColumnSpan="1" Margin="6.2,0.2,-6,0"/>
         <Image Source="{StaticResource 100Max}" Grid.Row="3" Grid.RowSpan="3" Grid.Column="4" Grid.ColumnSpan="1" Margin="6.2,0,-6,38.8"/>
-        <Button x:Name="Version" Grid.Row="5" Grid.RowSpan="2" Grid.ColumnSpan="3" Width="150" Height="50" x:FieldModifier="public" Background="LawnGreen" Content="Version: " FontFamily="Calibri" FontWeight="Bold" Click="Version_Button_Click" Margin="10,5.333,42,22.333" FontSize="17"/>
-
+        <Button x:Name="Version" Grid.Row="4" Grid.RowSpan="3" Grid.ColumnSpan="3" Width="150" Height="50" x:FieldModifier="public" Background="{x:Null}" Content="Version: " FontFamily="Calibri" FontWeight="Bold" Click="Version_Button_Click" Margin="10,23.8,41.6,38.2" FontSize="17" BorderBrush="{x:Null}" IsHitTestVisible="False"/>
+        <Button x:Name="Message1" Grid.Row="5" Grid.RowSpan="2" Grid.ColumnSpan="3" Width="150" Height="50" x:FieldModifier="public" Background="{x:Null}" FontFamily="Calibri" FontWeight="Bold" Click="Version_Button_Click" Margin="10,-7,41.6,11.2" FontSize="17" BorderBrush="{x:Null}" IsHitTestVisible="False" Foreground="Red"/>
+        <Button x:Name="Message2" Grid.Row="5" Grid.RowSpan="2" Grid.ColumnSpan="3" Width="150" Height="50" x:FieldModifier="public" Background="{x:Null}" FontFamily="Calibri" FontWeight="Bold" Click="Version_Button_Click" Margin="10,20.4,41.6,11.2" FontSize="17" BorderBrush="{x:Null}" IsHitTestVisible="False" Foreground="Red"/>
     </Grid>
 </Window>
