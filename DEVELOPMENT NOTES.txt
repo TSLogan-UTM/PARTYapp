@@ -80,3 +80,8 @@ TSL:
 -Changed the formatting of the buttons in the Version Selection window to match theme a little better.
 -Set the program to display the .exe name as "P.A.R.T.Y. App".
 -Changed the titles of all the windows to more final and professional messages.
+
+TSL(2):
+-Changed the Version button on the Canvas Creation window to clear and added extra dynamic messages.
+-Made the canvas in Advanced mode dynamically change size according to what the user selects during creation.
+-Adjusted the canvas sizes to take up as much of the screen as possible. May need further tweaking.

@@ -70,5 +70,16 @@ namespace PARTYapp
             PARTYapp.WorkGrid.AppWindow.clear();
         }
 
+        private void SaveTool_Click(object sender, RoutedEventArgs e)
+        {
+            SaveFile app = new SaveFile();
+            app.Show();
+        }
+
+        private void LoadTool_Click(object sender, RoutedEventArgs e)
+        {
+            LoadFile app = new LoadFile();
+            app.Show();
+        }
     }
 }

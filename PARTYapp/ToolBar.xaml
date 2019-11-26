@@ -36,10 +36,10 @@
 
         <Image Source="{StaticResource ToolBarBackground}" Grid.Row="0" Grid.RowSpan="15" Grid.Column="0" Grid.ColumnSpan="4" Margin="-26,0,-31,-35.4"/>
 
-        <Button x:Name="SaveTool" Grid.Row="1" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2" FontSize="22" Background="{x:Null}" BorderBrush="White" Foreground="#FF0600FF" BorderThickness="0,2,0,0">
+        <Button x:Name="SaveTool" Grid.Row="1" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2" Click="SaveTool_Click" FontSize="22" Background="{x:Null}" BorderBrush="White" Foreground="#FF0600FF" BorderThickness="0,2,0,0">
             <Image Source="{StaticResource SaveTool}"></Image>
         </Button>
-        <Button x:Name="LoadTool" Grid.Row="1" Grid.RowSpan="2" Grid.Column="2" Grid.ColumnSpan="2" FontSize="22" Background="{x:Null}" BorderThickness="0,2,0,0" BorderBrush="White">
+        <Button x:Name="LoadTool" Grid.Row="1" Grid.RowSpan="2" Grid.Column="2" Grid.ColumnSpan="2" Click="LoadTool_Click" FontSize="22" Background="{x:Null}" BorderThickness="0,2,0,0" BorderBrush="White">
             <Image Source="{StaticResource LoadTool}"/>
         </Button>
 
