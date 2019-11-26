@@ -188,7 +188,8 @@ namespace PARTYapp
 
         private void Save_Button_Click(object sender, RoutedEventArgs e)//not yet implemented
         {
-
+            SaveFile app = new SaveFile();
+            app.Show();
         }
 
         private void Width_Label_Click(object sender, RoutedEventArgs e)

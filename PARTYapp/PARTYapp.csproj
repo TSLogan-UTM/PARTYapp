@@ -77,6 +77,12 @@
     <Compile Include="Advanced.xaml.cs">
       <DependentUpon>Advanced.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SaveFile.xaml.cs">
+      <DependentUpon>SaveFile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoadFile.xaml.cs">
+      <DependentUpon>LoadFile.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WorkGrid.xaml.cs">
       <DependentUpon>WorkGrid.xaml</DependentUpon>
     </Compile>
@@ -87,6 +93,14 @@
       <DependentUpon>VersionChoice.xaml</DependentUpon>
     </Compile>
     <Page Include="Advanced.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SaveFile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoadFile.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
