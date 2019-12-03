@@ -29,116 +29,240 @@ namespace PARTYapp
             eventHandler.Show();
             AppWindow = this;
 
-            // Declare variables to make the canvas larger based on values.
-            // If height is 25 or less.
-            if (height <= 25)
+            // Check user's computer to see if they have terrible resolution...
+            double screenHeight = SystemParameters.PrimaryScreenHeight;
+
+            if (screenHeight >= 900)
             {
-                if (width <= 25)
+
+                // Declare variables to make the canvas larger based on values.
+                // If height is 25 or less.
+                if (height <= 25)
                 {
-                    this.Height = height * 24;
-                    this.Width = width * 24;
+                    if (width <= 25)
+                    {
+                        this.Height = height * 24;
+                        this.Width = width * 24;
+                    }
+
+                    else if (width > 25 && width <= 50)
+                    {
+                        this.Height = height * 23;
+                        this.Width = width * 22;
+                    }
+
+                    else if (width > 50 && width <= 75)
+                    {
+                        this.Height = height * 17;
+                        this.Width = width * 15;
+                    }
+
+                    else
+                    {
+                        this.Height = height * 15.5;
+                        this.Width = width * 11.5;
+                    }
                 }
 
-                else if (width > 25 && width <= 50)
+                // If height is between 26 and 50.
+                if (height > 25 && height <= 50)
                 {
-                    this.Height = height * 23;
-                    this.Width = width * 22;
+                    if (width <= 25)
+                    {
+                        this.Height = height * 12;
+                        this.Width = width * 16;
+                    }
+
+                    else if (width > 25 && width <= 50)
+                    {
+                        this.Height = height * 12;
+                        this.Width = width * 12;
+                    }
+
+                    else if (width > 50 && width <= 75)
+                    {
+                        this.Height = height * 12;
+                        this.Width = width * 12;
+                    }
+
+                    else
+                    {
+                        this.Height = height * 11.5;
+                        this.Width = width * 10.5;
+                    }
                 }
 
-                else if (width > 50 && width <= 75)
+                // If height is between 51 and 75.
+                if (height > 50 && height <= 75)
                 {
-                    this.Height = height * 17;
-                    this.Width = width * 15;
+                    if (width <= 25)
+                    {
+                        this.Height = height * 8;
+                        this.Width = width * 10;
+                    }
+
+                    else if (width > 25 && width <= 50)
+                    {
+                        this.Height = height * 8;
+                        this.Width = width * 9.5;
+                    }
+
+                    else if (width > 50 && width <= 75)
+                    {
+                        this.Height = height * 8;
+                        this.Width = width * 8;
+                    }
+
+                    else
+                    {
+                        this.Height = height * 8;
+                        this.Width = width * 9.5;
+                    }
                 }
 
-                else
+                // If height is between 76 and 100.
+                if (height > 75 && height <= 100)
                 {
-                    this.Height = height * 15.5;
-                    this.Width = width * 11.5;
+                    if (width <= 25)
+                    {
+                        this.Height = height * 6;
+                        this.Width = width * 8.5;
+                    }
+
+                    else if (width > 25 && width <= 50)
+                    {
+                        this.Height = height * 6;
+                        this.Width = width * 8.5;
+                    }
+
+                    else if (width > 50 && width <= 75)
+                    {
+                        this.Height = height * 6;
+                        this.Width = width * 8.5;
+                    }
+
+                    else
+                    {
+                        this.Height = height * 6;
+                        this.Width = width * 6;
+                    }
                 }
             }
 
-            // If height is between 26 and 50.
-            if (height > 25 && height <= 50)
+            if (screenHeight < 900)
             {
-                if (width <= 25)
+
+                // Declare variables to make the canvas larger based on values.
+                // If height is 25 or less.
+                if (height <= 25)
                 {
-                    this.Height = height * 12;
-                    this.Width = width * 16;
+                    if (width <= 25)
+                    {
+                        this.Height = height * 22;
+                        this.Width = width * 22;
+                    }
+
+                    else if (width > 25 && width <= 50)
+                    {
+                        this.Height = height * 1;
+                        this.Width = width * 20;
+                    }
+
+                    else if (width > 50 && width <= 75)
+                    {
+                        this.Height = height * 15;
+                        this.Width = width * 13;
+                    }
+
+                    else
+                    {
+                        this.Height = height * 13.5;
+                        this.Width = width * 9.5;
+                    }
                 }
 
-                else if (width > 25 && width <= 50)
+                // If height is between 26 and 50.
+                if (height > 25 && height <= 50)
                 {
-                    this.Height = height * 12;
-                    this.Width = width * 12;
+                    if (width <= 25)
+                    {
+                        this.Height = height * 10;
+                        this.Width = width * 14;
+                    }
+
+                    else if (width > 25 && width <= 50)
+                    {
+                        this.Height = height * 10;
+                        this.Width = width * 10;
+                    }
+
+                    else if (width > 50 && width <= 75)
+                    {
+                        this.Height = height * 10;
+                        this.Width = width * 10;
+                    }
+
+                    else
+                    {
+                        this.Height = height * 9.5;
+                        this.Width = width * 8.5;
+                    }
                 }
 
-                else if (width > 50 && width <= 75)
+                // If height is between 51 and 75.
+                if (height > 50 && height <= 75)
                 {
-                    this.Height = height * 12;
-                    this.Width = width * 12;
+                    if (width <= 25)
+                    {
+                        this.Height = height * 6;
+                        this.Width = width * 8;
+                    }
+
+                    else if (width > 25 && width <= 50)
+                    {
+                        this.Height = height * 6;
+                        this.Width = width * 7.5;
+                    }
+
+                    else if (width > 50 && width <= 75)
+                    {
+                        this.Height = height * 6;
+                        this.Width = width * 6;
+                    }
+
+                    else
+                    {
+                        this.Height = height * 6;
+                        this.Width = width * 7.5;
+                    }
                 }
 
-                else
+                // If height is between 76 and 100.
+                if (height > 75 && height <= 100)
                 {
-                    this.Height = height * 11.5;
-                    this.Width = width * 10.5;
-                }
-            }
+                    if (width <= 25)
+                    {
+                        this.Height = height * 4;
+                        this.Width = width * 6.5;
+                    }
 
-            // If height is between 51 and 75.
-            if (height > 50 && height <= 75)
-            {
-                if (width <= 25)
-                {
-                    this.Height = height * 8;
-                    this.Width = width * 10;
-                }
+                    else if (width > 25 && width <= 50)
+                    {
+                        this.Height = height * 4;
+                        this.Width = width * 6.5;
+                    }
 
-                else if (width > 25 && width <= 50)
-                {
-                    this.Height = height * 8;
-                    this.Width = width * 9.5;
-                }
+                    else if (width > 50 && width <= 75)
+                    {
+                        this.Height = height * 4;
+                        this.Width = width * 6.5;
+                    }
 
-                else if (width > 50 && width <= 75)
-                {
-                    this.Height = height * 8;
-                    this.Width = width * 8;
-                }
-
-                else
-                {
-                    this.Height = height * 8;
-                    this.Width = width * 9.5;
-                }
-            }
-
-            // If height is between 76 and 100.
-            if (height > 75 && height <= 100)
-            {
-                if (width <= 25)
-                {
-                    this.Height = height * 6;
-                    this.Width = width * 8.5;
-                }
-
-                else if (width > 25 && width <= 50)
-                {
-                    this.Height = height * 6;
-                    this.Width = width * 8.5;
-                }
-
-                else if (width > 50 && width <= 75)
-                {
-                    this.Height = height * 6;
-                    this.Width = width * 8.5;
-                }
-
-                else
-                {
-                    this.Height = height * 6;
-                    this.Width = width * 6;
+                    else
+                    {
+                        this.Height = height * 4;
+                        this.Width = width * 4;
+                    }
                 }
             }
 
