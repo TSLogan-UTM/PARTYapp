@@ -6,9 +6,9 @@
         xmlns:local="clr-namespace:PARTYapp"
         mc:Ignorable="d"
         Title="Grid" Height="682" Width="800"
-        WindowStartupLocation="CenterScreen"
         WindowStyle="None"
-        ResizeMode="NoResize">
+        ResizeMode="NoResize"
+        WindowStartupLocation="Manual" Top="75">
     <Grid x:Name="WorkingGrid" x:FieldModifier="public">
 
 
