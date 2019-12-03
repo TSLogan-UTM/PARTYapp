@@ -164,7 +164,7 @@ namespace PARTYapp
 
                     else if (width > 25 && width <= 50)
                     {
-                        this.Height = height * 1;
+                        this.Height = height * 17;
                         this.Width = width * 20;
                     }
 
