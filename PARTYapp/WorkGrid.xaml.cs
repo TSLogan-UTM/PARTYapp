@@ -276,7 +276,7 @@ namespace PARTYapp
                         // Dyanmically set grid window position based on window size.
                         windowHeight = height * 17;
                         windowWidth = width * 20;
-                        this.Left = (SystemParameters.PrimaryScreenWidth - windowWidth) / 2;
+                        this.Left = (SystemParameters.PrimaryScreenWidth - windowWidth) / 1.25;
                         this.Top = (SystemParameters.PrimaryScreenHeight - windowHeight) / 3;
                     }
 
@@ -288,7 +288,7 @@ namespace PARTYapp
                         // Dyanmically set grid window position based on window size.
                         windowHeight = height * 15;
                         windowWidth = width * 13;
-                        this.Left = (SystemParameters.PrimaryScreenWidth - windowWidth) / 2;
+                        this.Left = (SystemParameters.PrimaryScreenWidth - windowWidth) / 1.3;
                         this.Top = (SystemParameters.PrimaryScreenHeight - windowHeight) / 3;
                     }
 
@@ -300,7 +300,7 @@ namespace PARTYapp
                         // Dyanmically set grid window position based on window size.
                         windowHeight = height * 13.5;
                         windowWidth = width * 9.5;
-                        this.Left = (SystemParameters.PrimaryScreenWidth - windowWidth) / 2;
+                        this.Left = (SystemParameters.PrimaryScreenWidth - windowWidth) / 1.3;
                         this.Top = (SystemParameters.PrimaryScreenHeight - windowHeight) / 3;
                     }
                 }
@@ -328,7 +328,7 @@ namespace PARTYapp
                         // Dyanmically set grid window position based on window size.
                         windowHeight = height * 10;
                         windowWidth = width * 10;
-                        this.Left = (SystemParameters.PrimaryScreenWidth - windowWidth) / 2;
+                        this.Left = (SystemParameters.PrimaryScreenWidth - windowWidth) / 1.75;
                         this.Top = (SystemParameters.PrimaryScreenHeight - windowHeight) / 3;
                     }
 
@@ -340,7 +340,7 @@ namespace PARTYapp
                         // Dyanmically set grid window position based on window size.
                         windowHeight = height * 10;
                         windowWidth = width * 10;
-                        this.Left = (SystemParameters.PrimaryScreenWidth - windowWidth) / 2;
+                        this.Left = (SystemParameters.PrimaryScreenWidth - windowWidth) / 1.5;
                         this.Top = (SystemParameters.PrimaryScreenHeight - windowHeight) / 3;
                     }
 
@@ -352,7 +352,7 @@ namespace PARTYapp
                         // Dyanmically set grid window position based on window size.
                         windowHeight = height * 9.5;
                         windowWidth = width * 8.5;
-                        this.Left = (SystemParameters.PrimaryScreenWidth - windowWidth) / 2;
+                        this.Left = (SystemParameters.PrimaryScreenWidth - windowWidth) / 1.4;
                         this.Top = (SystemParameters.PrimaryScreenHeight - windowHeight) / 3;
                     }
                 }
@@ -392,7 +392,7 @@ namespace PARTYapp
                         // Dyanmically set grid window position based on window size.
                         windowHeight = height * 6;
                         windowWidth = width * 6;
-                        this.Left = (SystemParameters.PrimaryScreenWidth - windowWidth) / 2;
+                        this.Left = (SystemParameters.PrimaryScreenWidth - windowWidth) / 1.75;
                         this.Top = (SystemParameters.PrimaryScreenHeight - windowHeight) / 3;
                     }
 
@@ -404,7 +404,7 @@ namespace PARTYapp
                         // Dyanmically set grid window position based on window size.
                         windowHeight = height * 6;
                         windowWidth = width * 7.5;
-                        this.Left = (SystemParameters.PrimaryScreenWidth - windowWidth) / 2;
+                        this.Left = (SystemParameters.PrimaryScreenWidth - windowWidth) / 1.75;
                         this.Top = (SystemParameters.PrimaryScreenHeight - windowHeight) / 3;
                     }
                 }
@@ -414,11 +414,11 @@ namespace PARTYapp
                 {
                     if (width <= 25)
                     {
-                        this.Height = height * 4;
+                        this.Height = height * 5.5;
                         this.Width = width * 6.5;
 
                         // Dyanmically set grid window position based on window size.
-                        windowHeight = height * 4;
+                        windowHeight = height * 5.5;
                         windowWidth = width * 6.5;
                         this.Left = (SystemParameters.PrimaryScreenWidth - windowWidth) / 2;
                         this.Top = (SystemParameters.PrimaryScreenHeight - windowHeight) / 3;
@@ -426,36 +426,36 @@ namespace PARTYapp
 
                     else if (width > 25 && width <= 50)
                     {
-                        this.Height = height * 4;
+                        this.Height = height * 5.5;
                         this.Width = width * 6.5;
 
                         // Dyanmically set grid window position based on window size.
                         windowHeight = height * 4;
                         windowWidth = width * 6.5;
                         this.Left = (SystemParameters.PrimaryScreenWidth - windowWidth) / 2;
-                        this.Top = (SystemParameters.PrimaryScreenHeight - windowHeight) / 3;
+                        this.Top = (SystemParameters.PrimaryScreenHeight - windowHeight) / 4;
                     }
 
                     else if (width > 50 && width <= 75)
                     {
-                        this.Height = height * 4;
+                        this.Height = height * 5.5;
                         this.Width = width * 6.5;
 
                         // Dyanmically set grid window position based on window size.
                         windowHeight = height * 4;
                         windowWidth = width * 6.5;
                         this.Left = (SystemParameters.PrimaryScreenWidth - windowWidth) / 2;
-                        this.Top = (SystemParameters.PrimaryScreenHeight - windowHeight) / 3;
+                        this.Top = (SystemParameters.PrimaryScreenHeight - windowHeight) / 4;
                     }
 
                     else
                     {
-                        this.Height = height * 4;
-                        this.Width = width * 4;
+                        this.Height = height * 5.5;
+                        this.Width = width * 5.5;
 
                         // Dyanmically set grid window position based on window size.
-                        windowHeight = height * 4;
-                        windowWidth = width * 4;
+                        windowHeight = height * 5.5;
+                        windowWidth = width * 5.5;
                         this.Left = (SystemParameters.PrimaryScreenWidth - windowWidth) / 2;
                         this.Top = (SystemParameters.PrimaryScreenHeight - windowHeight) / 3;
                     }
