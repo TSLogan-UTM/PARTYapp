@@ -43,13 +43,13 @@
             <Image Source="{StaticResource LoadTool}"/>
         </Button>
 
-        <Button x:Name="PixelTool" Grid.Row="3" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2" FontSize="22" Background="{x:Null}" BorderThickness="0">
+        <Button x:Name="PixelTool" Grid.Row="3" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2" Click="PixelTool_Click" FontSize="22" Background="{x:Null}" BorderThickness="0">
             <Image Source="{StaticResource PixelTool}"/>
         </Button>
         <Button x:Name="RowTool" Grid.Row="3" Grid.RowSpan="2" Grid.Column="2" Grid.ColumnSpan="2" FontSize="22" Background="{x:Null}" BorderThickness="0">
             <Image Source="{StaticResource RowTool}"/>
         </Button>
-        <Button x:Name="SplashTool" Grid.Row="5" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2" FontSize="22" Background="{x:Null}" BorderThickness="0,0,0,2" BorderBrush="White">
+        <Button x:Name="SplashTool" Grid.Row="5" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2" Click="SplashTool_Click" FontSize="22" Background="{x:Null}" BorderThickness="0,0,0,2" BorderBrush="White">
             <Image Source="{StaticResource SplashTool}"/>
         </Button>
         <Button x:Name="ClearTool" Grid.Row="5" Grid.RowSpan="2" Grid.Column="2" Grid.ColumnSpan="2" Click="ClearButton_Click" FontSize="22" Background="{x:Null}" BorderBrush="White" BorderThickness="0,0,0,2">

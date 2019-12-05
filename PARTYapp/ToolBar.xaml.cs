@@ -23,6 +23,8 @@ namespace PARTYapp
         byte r = 0;
         byte g = 0;
         byte b = 0;
+
+        int Splash_Select = 0;
         
 
         public ToolBar()
@@ -58,12 +60,23 @@ namespace PARTYapp
         {
             b = Convert.ToByte(e.NewValue);
             ColorBox.Background = new SolidColorBrush(Color.FromRgb(r, g, b));
+            
         }
 
         public void Button_Click(object sender, RoutedEventArgs e)
         {
             Button btn = sender as Button;
-            btn.Background = new SolidColorBrush(Color.FromRgb(r, g, b));
+            Button btn2 = btn;
+            btn2.Background = ColorBox.Background;
+
+            if (Splash_Select == 1)
+            {
+                PARTYapp.WorkGrid.AppWindow.Splash(btn2, btn);
+            }
+            else
+            {
+                btn.Background = new SolidColorBrush(Color.FromRgb(r, g, b));
+            }
         }
         private void ClearButton_Click(object sender, RoutedEventArgs e)
         {
@@ -84,7 +97,22 @@ namespace PARTYapp
 
         private void SplashTool_Click(object sender, RoutedEventArgs e)
         {
-            //PARTYapp.WorkGrid.AppWindow.Splash();
+            if(Splash_Select == 0)
+            {
+                Splash_Select = 1;
+                MessageBox.Show("Splash mode Selected", "PARTY FOUL");
+            }
+            else
+            {
+                Splash_Select = 0;
+                
+            }
+        }
+
+        private void PixelTool_Click(object sender, RoutedEventArgs e)
+        {
+            Splash_Select = 0;
+            MessageBox.Show("Pixel mode Selected", "PARTY FOUL");
         }
     }
 }

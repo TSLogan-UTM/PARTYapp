@@ -20,6 +20,9 @@ namespace PARTYapp
     public partial class WorkGrid : Window
     {
         public static WorkGrid AppWindow;
+
+        //Used to keep track of Canvas Dimensions.
+        int canvas_height, canvas_width;
         public WorkGrid(int height, int width)
         {
             InitializeComponent();
@@ -28,6 +31,9 @@ namespace PARTYapp
             eventHandler.Topmost = true;
             eventHandler.Show();
             AppWindow = this;
+
+            canvas_height = height;
+            canvas_width = width;
 
             // Check user's computer to see if they have terrible resolution...
             double screenHeight = SystemParameters.PrimaryScreenHeight;
@@ -460,6 +466,7 @@ namespace PARTYapp
                         this.Top = (SystemParameters.PrimaryScreenHeight - windowHeight) / 3;
                     }
                 }
+                
             }
 
 
@@ -505,7 +512,7 @@ namespace PARTYapp
             /* Pull the height and width of the current workgrid then multiply by 3
                to make enough room for all RGB values. Must be double because system
                spec queries return doubles.*/
-            double grid = this.Height * this.Width * 3;
+            double grid = canvas_height * canvas_width * 3;
 
             // Convert that to an int to integrate with current code.
             int grid2 = Convert.ToInt32(grid);
@@ -514,7 +521,7 @@ namespace PARTYapp
             int i = 0;
             foreach (Button btn in WorkingGrid.Children)
             {
-
+                
                 Button b = (Button)btn;
                 var color = ((SolidColorBrush)b.Background).Color;
                 array[i] = color.R;
@@ -523,12 +530,15 @@ namespace PARTYapp
                 i++;
                 array[i] = color.B;
                 i++;
+                
 
             }
 
             string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             using (System.IO.StreamWriter file = new System.IO.StreamWriter(System.IO.Path.Combine(docPath, FileLocation)))
             {
+                file.WriteLine(canvas_height);
+                file.WriteLine(canvas_width);
                 for (int j = 0; j < grid2; j++)
                 {
 
@@ -544,59 +554,78 @@ namespace PARTYapp
             /* Pull the height and width of the current workgrid then multiply by 3
                to make enough room for all RGB values. Must be double because system
                spec queries return doubles.*/
-            double grid = this.Width * this.Height * 3;
+            double grid = canvas_height * canvas_width * 3;
 
             // Convert that to an int to integrate with current code.
             int grid2 = Convert.ToInt32(grid);
             int[] array = new int[grid2];
 
+            double check_height, check_width;
 
             string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             using (System.IO.StreamReader file = new System.IO.StreamReader(System.IO.Path.Combine(docPath, FileLocation)))
             {
-
-                for (int i = 0; i < grid2; i++)
+                check_height = int.Parse(file.ReadLine());
+                check_width = int.Parse(file.ReadLine());
+                if (check_height == canvas_height && check_width == canvas_width)
                 {
-
-                    array[i] = int.Parse(file.ReadLine());
+                    for (int i = 0; i < grid2; i++)
+                    {
+                        
+                        array[i] = int.Parse(file.ReadLine());
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("ERROR, Canvas can not load. Wrong Dimensions", "PARTY FOUL");
                 }
 
             }
-            int j = 0;
-            foreach (Button btn in WorkingGrid.Children)
+            
+            if (check_height == canvas_height && check_width == canvas_width)
             {
+                int j = 0;
+                foreach (Button btn in WorkingGrid.Children)
+                {
 
-                Button b = (Button)btn;
-                var color = ((SolidColorBrush)b.Background).Color;
-                color.R = (byte)array[j];
-                j++;
-                color.G = (byte)array[j];
-                j++;
-                color.B = (byte)array[j];
-                j++;
-                var brush = new SolidColorBrush(Color.FromArgb(255, color.R, color.G, color.B));
-                b.Background = brush;
+                    Button b = (Button)btn;
+                    var color = ((SolidColorBrush)b.Background).Color;
+                    color.R = (byte)array[j];
+                    j++;
+                    color.G = (byte)array[j];
+                    j++;
+                    color.B = (byte)array[j];
+                    j++;
+                    var brush = new SolidColorBrush(Color.FromArgb(255, color.R, color.G, color.B));
+                    b.Background = brush;
 
 
+                }
+            }
+            else
+            {
+                //If Dimensions are different nothing will happen
             }
         }
 
-       /* public void Splash()
+       public void Splash(Button New_Color, Button Old_Color)
         {
-            int count = 0;
+            var color_compare = ((SolidColorBrush)Old_Color.Background).Color;
             foreach (Button btn in WorkingGrid.Children)
             {
-                Button b = (Button)btn;
-                var color = ((SolidColorBrush)b.Background).Color;
-                color.R = (byte)array[count];
-                j++;
-                color.G = (byte)array[count];
-                j++;
-                color.B = (byte)array[count];
-                j++;
-                var brush = new SolidColorBrush(Color.FromArgb(255, color.R, color.G, color.B));
-                b.Background = brush;
+                Button bb = (Button)btn;
+                var color = ((SolidColorBrush)bb.Background).Color;
+               // var color_compare = ((SolidColorBrush)Old_Color.Background).Color;
+                if (New_Color.Background == bb.Background)
+                {
+                    bb.Background = New_Color.Background;
+                }
+                else
+                {
+                   bb.Background = Old_Color.Background;
+                }
+                
             }
-        }*/
+        }
     }
 }

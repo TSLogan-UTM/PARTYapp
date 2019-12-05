@@ -15,28 +15,35 @@ using System.Windows.Shapes;
 
 namespace PARTYapp
 {
-    
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+        PARTY_WINDOW app = new PARTY_WINDOW();
 
-        
+        public static int Canvas_Height;
+        public static int Canvas_Width;
+
         private void CreateButton_Click(object sender, RoutedEventArgs e)
         {
             int width = Convert.ToInt32(WidthBox.Text);
             int height = Convert.ToInt32(HeightBox.Text);
+
+            Canvas_Height = height;
+            Canvas_Width = width;
+
             if (Convert.ToString(Version.Content) == "Version: Basic")
             {
-                PARTY_WINDOW app = new PARTY_WINDOW();
+                
 
                 //app.GRID_100.ShowGridLines = false; These seem redundant because i forgot what my plans with them were
                 //app.GRID_75.ShowGridLines = false;
                 //app.GRID_50.ShowGridLines = false;
                 //app.GRID_25.ShowGridLines = false;
 
-                
+
 
                 if (width == height)//Checks if grid is a square (this is ideal)
                 {
@@ -212,8 +219,6 @@ namespace PARTYapp
             WidthBox.Text = Convert.ToString(WidthSlider.Value);
         }
 
-       
-
 
         public MainWindow()
         {
@@ -227,5 +232,7 @@ namespace PARTYapp
         {
 
         }
+
+
     }
 }
