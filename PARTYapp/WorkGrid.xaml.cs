@@ -616,7 +616,7 @@ namespace PARTYapp
                 Button bb = (Button)btn;
                 var color = ((SolidColorBrush)bb.Background).Color;
                // var color_compare = ((SolidColorBrush)Old_Color.Background).Color;
-                if (New_Color.Background == bb.Background)
+                if (Old_Color.Background == bb.Background)
                 {
                     bb.Background = New_Color.Background;
                 }
