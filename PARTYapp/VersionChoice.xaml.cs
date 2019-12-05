@@ -60,7 +60,7 @@ namespace PARTYapp
                 adv.Version.Content = adv.Version.Content + windowType;
                 adv.Message1.Foreground = Brushes.Black;
                 adv.Message2.Foreground = Brushes.Black;
-                adv.Message1.Content = "Remember, 1 to 1";
+                adv.Message1.Content = "Remember, 2 to 1";
                 adv.Message2.Content = "ratios work best...";
                 this.Close();
                 adv.Show();
