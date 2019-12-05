@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PARTYapp"
         mc:Ignorable="d"
-        Title="SaveFileDialogSample" Height="100" Width="400">
+        Title="SaveFileDialogSample" Height="100" Width="400"
+        Topmost="True">
     <Grid RenderTransformOrigin="0.504,0.639">
         <Grid.RowDefinitions>
             <RowDefinition/>

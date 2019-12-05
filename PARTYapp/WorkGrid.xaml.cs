@@ -491,7 +491,7 @@ namespace PARTYapp
         }
         public void clear()
         {
-          
+
             foreach (Button btn in WorkingGrid.Children)
             {
                 Button b = (Button)btn;
@@ -502,13 +502,19 @@ namespace PARTYapp
         }
         public void Save_RGB_Values(string FileLocation)
         {
-            int grid = 25*25*3;
-            int[] array = new int[grid];
+            /* Pull the height and width of the current workgrid then multiply by 3
+               to make enough room for all RGB values. Must be double because system
+               spec queries return doubles.*/
+            double grid = this.Height * this.Width * 3;
+
+            // Convert that to an int to integrate with current code.
+            int grid2 = Convert.ToInt32(grid);
+            int[] array = new int[grid2];
 
             int i = 0;
             foreach (Button btn in WorkingGrid.Children)
             {
-                
+
                 Button b = (Button)btn;
                 var color = ((SolidColorBrush)b.Background).Color;
                 array[i] = color.R;
@@ -517,43 +523,49 @@ namespace PARTYapp
                 i++;
                 array[i] = color.B;
                 i++;
-                
+
             }
-            
+
             string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             using (System.IO.StreamWriter file = new System.IO.StreamWriter(System.IO.Path.Combine(docPath, FileLocation)))
             {
-                for (int j = 0; j < grid; j++)
+                for (int j = 0; j < grid2; j++)
                 {
 
-                        file.WriteLine(array[j]);
- 
+                    file.WriteLine(array[j]);
+
                 }
             }
-            
+
         }
-        
+
         public void Load_RGB_Values(string FileLocation)
         {
-            int grid = 25*25*3;
-            int[] array = new int[grid];
+            /* Pull the height and width of the current workgrid then multiply by 3
+               to make enough room for all RGB values. Must be double because system
+               spec queries return doubles.*/
+            double grid = this.Width * this.Height * 3;
+
+            // Convert that to an int to integrate with current code.
+            int grid2 = Convert.ToInt32(grid);
+            int[] array = new int[grid2];
 
 
             string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             using (System.IO.StreamReader file = new System.IO.StreamReader(System.IO.Path.Combine(docPath, FileLocation)))
             {
 
-                for (int i = 0; i < 625 * 3; i++)
+                for (int i = 0; i < grid2; i++)
                 {
 
                     array[i] = int.Parse(file.ReadLine());
-                 }
+                }
 
             }
             int j = 0;
             foreach (Button btn in WorkingGrid.Children)
             {
-                
+
                 Button b = (Button)btn;
                 var color = ((SolidColorBrush)b.Background).Color;
                 color.R = (byte)array[j];
@@ -567,10 +579,24 @@ namespace PARTYapp
 
 
             }
-            
-            
         }
-        
-    
+
+       /* public void Splash()
+        {
+            int count = 0;
+            foreach (Button btn in WorkingGrid.Children)
+            {
+                Button b = (Button)btn;
+                var color = ((SolidColorBrush)b.Background).Color;
+                color.R = (byte)array[count];
+                j++;
+                color.G = (byte)array[count];
+                j++;
+                color.B = (byte)array[count];
+                j++;
+                var brush = new SolidColorBrush(Color.FromArgb(255, color.R, color.G, color.B));
+                b.Background = brush;
+            }
+        }*/
     }
 }

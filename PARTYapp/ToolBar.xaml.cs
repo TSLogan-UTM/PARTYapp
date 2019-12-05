@@ -81,5 +81,10 @@ namespace PARTYapp
             LoadFile app = new LoadFile();
             app.Show();
         }
+
+        private void SplashTool_Click(object sender, RoutedEventArgs e)
+        {
+            //PARTYapp.WorkGrid.AppWindow.Splash();
+        }
     }
 }
